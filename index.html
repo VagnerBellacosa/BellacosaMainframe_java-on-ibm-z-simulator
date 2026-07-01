@@ -1,682 +1,826 @@
-﻿
-<!DOCTYPE html>
-<html lang="pt-BR" dir="ltr" prefix="og: https://ogp.me/ns#">
+﻿<!DOCTYPE html>
+
+<html lang="pt-BR"
+      dir="ltr"
+      prefix="og: https://ogp.me/ns#">
 
 <head>
 
-<!-- =====================================================
+<!-- ==========================================================
  Bellacosa Mainframe
- Java no IBM Z Simulator
- ====================================================== -->
+ Java on IBM Z Simulator
+ Version 2.0
+ Author: Vagner Bellacosa
+=========================================================== -->
 
 <meta charset="UTF-8">
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="X-UA-Compatible"
+      content="IE=edge">
 
-<meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport"
+      content="width=device-width,
+               initial-scale=1,
+               viewport-fit=cover">
 
-<meta
-      name="format-detection"
+<meta name="format-detection"
       content="telephone=no">
 
-<meta
-      name="color-scheme"
+<meta name="color-scheme"
       content="dark light">
 
-<meta
-      name="theme-color"
+<meta name="theme-color"
       content="#07111F">
 
-<meta
-      name="application-name"
-      content="Java no IBM Z Simulator">
+<meta name="application-name"
+      content="Bellacosa Mainframe Java on IBM Z Simulator">
 
-<meta
-      name="apple-mobile-web-app-capable"
+<meta name="apple-mobile-web-app-capable"
       content="yes">
 
-<meta
-      name="apple-mobile-web-app-status-bar-style"
+<meta name="apple-mobile-web-app-status-bar-style"
       content="black-translucent">
 
-<meta
-      name="apple-mobile-web-app-title"
-      content="Java no IBM Z Simulator">
-
-<meta
-      name="mobile-web-app-capable"
-      content="yes">
-
-<meta
-      name="generator"
-      content="Bellacosa Mainframe Learning Framework">
-
-<meta
-      name="author"
-      content="Vagner Bellacosa">
-
-<meta
-      name="creator"
-      content="Vagner Bellacosa">
-
-<meta
-      name="publisher"
+<meta name="apple-mobile-web-app-title"
       content="Bellacosa Mainframe">
 
-<meta
-      name="robots"
-      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="mobile-web-app-capable"
+      content="yes">
 
-<meta
-      name="googlebot"
+<meta name="generator"
+      content="Bellacosa Mainframe Learning Framework">
+
+<meta name="author"
+      content="Vagner Bellacosa">
+
+<meta name="creator"
+      content="Vagner Bellacosa">
+
+<meta name="publisher"
+      content="Bellacosa Mainframe">
+
+<meta name="copyright"
+      content="Bellacosa Mainframe">
+
+<meta name="robots"
+      content="index,
+               follow,
+               max-image-preview:large,
+               max-snippet:-1,
+               max-video-preview:-1">
+
+<meta name="googlebot"
       content="index,follow">
 
-<meta
-      name="bingbot"
+<meta name="bingbot"
       content="index,follow">
 
-<meta
-      name="referrer"
+<meta name="referrer"
       content="strict-origin-when-cross-origin">
 
-<meta
-      name="rating"
+<meta name="rating"
       content="general">
 
-<meta
-      name="language"
+<meta name="language"
       content="pt-BR">
 
-<meta
-      name="distribution"
+<meta name="distribution"
       content="global">
 
-<meta
-      name="revisit-after"
+<meta name="revisit-after"
       content="7 days">
 
-<title>
-Java no IBM Z Simulator | Laboratório Gamificado para Programadores COBOL | Bellacosa Mainframe
-</title>
+<meta name="description"
+      content="Aprenda Java no IBM Z através de laboratórios gamificados, desafios, arquitetura, quizzes, Boss Battles e certificação. Desenvolvido especialmente para programadores COBOL que desejam migrar para Java no ecossistema IBM Z.">
 
-<meta
-      name="description"
-      content="Aprenda Java no IBM Z através de laboratórios interativos, arquitetura, quizzes, desafios, Boss Battles e gamificação. Desenvolvido especialmente para programadores COBOL.">
-
-<meta
-      name="keywords"
-      content="
-IBM Z,
+<meta name="keywords"
+      content="IBM Z,
 IBM Mainframe,
 Java,
 Java on Z,
 COBOL,
 Enterprise COBOL,
 z/OS,
-JCL,
 CICS,
 Db2,
-JVM,
+IMS,
 MQ,
+JCL,
+VSAM,
 REST,
-APIs,
+API,
 OpenShift,
 LinuxONE,
-Mainframe,
-Programação,
 Gamificação,
-Treinamento,
-Laboratórios,
-Bellacosa Mainframe">
+Bellacosa Mainframe,
+Treinamento Mainframe,
+Curso Java IBM Z">
 
-<!-- =====================================================
+<title>
+
+Bellacosa Mainframe • Java on IBM Z Simulator
+
+</title>
+
+<!-- ==========================================================
  Canonical
-====================================================== -->
+=========================================================== -->
 
-<link
-      rel="canonical"
-      href="https://eljefemidnightlunch.blogspot.com/">
+<link rel="canonical"
+      href="https://eljefemidnightlunch.blogspot.com/p/java-on-ibm-z-simulator.html">
 
-<!-- =====================================================
- Manifest / PWA
-====================================================== -->
+<!-- ==========================================================
+ Manifest
+=========================================================== -->
 
-<link
-      rel="manifest"
-      href="seo/manifest.webmanifest">
+<link rel="manifest"
+      href="./manifest.webmanifest">
 
-<meta
-      name="msapplication-config"
-      content="seo/browserconfig.xml">
+<meta name="msapplication-TileColor"
+      content="#07111F">
 
-<!-- =====================================================
+<meta name="msapplication-config"
+      content="./browserconfig.xml">
+
+<!-- ==========================================================
  Icons
-====================================================== -->
+=========================================================== -->
 
-<link
-      rel="icon"
-      type="image/svg+xml"
-      href="Assets/icons/favicon.svg">
+<link rel="icon"
+      href="./assets/icons/favicon.ico">
 
-<link
-      rel="icon"
+<link rel="icon"
       type="image/png"
       sizes="32x32"
-      href="Assets/icons/favicon-32.png">
+      href="./assets/icons/favicon-32.png">
 
-<link
-      rel="icon"
+<link rel="icon"
       type="image/png"
       sizes="16x16"
-      href="Assets/icons/favicon-16.png">
+      href="./assets/icons/favicon-16.png">
 
-<link
-      rel="shortcut icon"
-      href="Assets/icons/favicon.ico">
+<link rel="apple-touch-icon"
+      href="./assets/icons/apple-touch-icon.png">
 
-<link
-      rel="apple-touch-icon"
-      href="Assets/icons/apple-touch-icon.png">
+<link rel="mask-icon"
+      href="./assets/icons/safari-pinned-tab.svg"
+      color="#07111F">
 
-<!-- =====================================================
+<!-- ==========================================================
  Open Graph
-====================================================== -->
+=========================================================== -->
 
-<meta
-      property="og:type"
+<meta property="og:type"
       content="website">
 
-<meta
-      property="og:locale"
+<meta property="og:locale"
       content="pt_BR">
 
-<meta
-      property="og:site_name"
+<meta property="og:site_name"
       content="Bellacosa Mainframe">
 
-<meta
-      property="og:title"
-      content="Java no IBM Z Simulator">
+<meta property="og:title"
+      content="Java on IBM Z Simulator">
 
-<meta
-      property="og:description"
-      content="Laboratório gamificado para ensinar Java a programadores COBOL utilizando IBM Z.">
+<meta property="og:description"
+      content="Aprenda Java no IBM Z utilizando uma plataforma gamificada inspirada em jogos RPG e laboratórios práticos para profissionais COBOL.">
 
-<meta
-      property="og:url"
-      content="https://eljefemidnightlunch.blogspot.com/">
+<meta property="og:url"
+      content="https://eljefemidnightlunch.blogspot.com/p/java-on-ibm-z-simulator.html">
 
-<meta
-      property="og:image"
-      content="Assets/image/social-banner.jpg">
+<meta property="og:image"
+      content="./assets/images/social-banner.webp">
 
-<meta
-      property="og:image:width"
+<meta property="og:image:width"
       content="1200">
 
-<meta
-      property="og:image:height"
+<meta property="og:image:height"
       content="630">
 
-<meta
-      property="og:image:alt"
-      content="Java no IBM Z Simulator">
+<meta property="og:image:alt"
+      content="Bellacosa Mainframe Java on IBM Z Simulator">
 
-<!-- =====================================================
+<!-- ==========================================================
  Twitter
-====================================================== -->
+=========================================================== -->
 
-<meta
-      name="twitter:card"
+<meta name="twitter:card"
       content="summary_large_image">
 
-<meta
-      name="twitter:title"
-      content="Java no IBM Z Simulator">
+<meta name="twitter:title"
+      content="Java on IBM Z Simulator">
 
-<meta
-      name="twitter:description"
-      content="Aprenda Java no IBM Z através de laboratórios interativos e gamificação.">
+<meta name="twitter:description"
+      content="Laboratórios gamificados para aprender Java no IBM Z.">
 
-<meta
-      name="twitter:image"
-      content="Assets/image/social-banner.jpg">
+<meta name="twitter:image"
+      content="./assets/images/social-banner.webp">
 
-<!-- =====================================================
+<!-- ==========================================================
  Performance
-====================================================== -->
+=========================================================== -->
 
-<link
-      rel="preconnect"
+<link rel="preconnect"
       href="https://fonts.googleapis.com">
 
-<link
-      rel="preconnect"
+<link rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin>
 
-<link
-      rel="dns-prefetch"
+<link rel="dns-prefetch"
       href="//fonts.googleapis.com">
 
-<link
-      rel="dns-prefetch"
+<link rel="dns-prefetch"
       href="//fonts.gstatic.com">
 
-<link
-      rel="preload"
-      href="Assets/image/background.webp"
+<link rel="preload"
+      href="./assets/images/background.webp"
       as="image">
 
-<link
-      rel="preload"
-      href="Assets/image/avatar1.png"
+<link rel="preload"
+      href="./assets/images/logo.webp"
       as="image">
 
-<link
-      rel="preload"
-      href="Assets/audio/boss.mp3"
+<link rel="preload"
+      href="./assets/audio/click.mp3"
       as="audio">
 
-<!-- =====================================================
+<!-- ==========================================================
  Fonts
-====================================================== -->
+=========================================================== -->
 
 <link
-href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700;800&display=swap"
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700&display=swap"
 rel="stylesheet">
 
-<!-- =====================================================
- CSS
-====================================================== -->
+<!-- ==========================================================
+ CSS Core
+=========================================================== -->
 
-<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet"
+      href="./css/core/reset.css">
 
-<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet"
+      href="./css/core/variables.css">
 
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet"
+      href="./css/core/theme.css">
 
-<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet"
+      href="./css/core/layout.css">
 
-<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet"
+      href="./css/core/utilities.css">
 
-<link rel="stylesheet" href="css/startup.css">
+<link rel="stylesheet"
+      href="./css/core/responsive.css">
 
-<link rel="stylesheet" href="css/terminal.css">
+<link rel="stylesheet"
+      href="./css/core/animations.css">
 
-<link rel="stylesheet" href="css/lab.css">
+<!-- ==========================================================
+ Components
+=========================================================== -->
 
-<link rel="stylesheet" href="css/boss.css">
+<link rel="stylesheet"
+      href="./css/components/buttons.css">
 
-<link rel="stylesheet" href="css/mapping.css">
+<link rel="stylesheet"
+      href="./css/components/cards.css">
 
-<link rel="stylesheet" href="css/architecture.css">
+<link rel="stylesheet"
+      href="./css/components/modal.css">
 
-<link rel="stylesheet" href="css/glossary.css">
+<link rel="stylesheet"
+      href="./css/components/progress.css">
 
-<link rel="stylesheet" href="css/leaderboard.css">
+<link rel="stylesheet"
+      href="./css/components/sidebar.css">
 
-<link rel="stylesheet" href="css/certificate.css">
+<link rel="stylesheet"
+      href="./css/components/header.css">
 
-<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet"
+      href="./css/components/footer.css">
 
-<!-- =====================================================
- SEO Files
-====================================================== -->
+<link rel="stylesheet"
+      href="./css/components/toast.css">
 
-<link
-      rel="alternate"
-      type="application/json"
-      href="seo/open-graph.json">
+<!-- ==========================================================
+ Screens
+=========================================================== -->
 
-<link
-      rel="alternate"
-      type="application/json"
-      href="seo/twitter-card.json">
+<link rel="stylesheet"
+      href="./css/screens/startup.css">
 
-<link
-      rel="alternate"
+<link rel="stylesheet"
+      href="./css/screens/home.css">
+
+<link rel="stylesheet"
+      href="./css/screens/labs.css">
+
+<link rel="stylesheet"
+      href="./css/screens/architecture.css">
+
+<link rel="stylesheet"
+      href="./css/screens/mapping.css">
+
+<link rel="stylesheet"
+      href="./css/screens/timeline.css">
+
+<link rel="stylesheet"
+      href="./css/screens/quiz.css">
+
+<link rel="stylesheet"
+      href="./css/screens/boss.css">
+
+<link rel="stylesheet"
+      href="./css/screens/glossary.css">
+
+<link rel="stylesheet"
+      href="./css/screens/leaderboard.css">
+
+<link rel="stylesheet"
+      href="./css/screens/certificate.css">
+
+<link rel="stylesheet"
+      href="./css/screens/settings.css">
+
+<link rel="stylesheet"
+      href="./css/screens/about.css">
+
+<link rel="stylesheet"
+      href="./css/screens/credits.css">
+
+<!-- ==========================================================
+ AI / SEO Files
+=========================================================== -->
+
+<link rel="alternate"
       type="text/plain"
-      href="seo/llms.txt">
+      href="./llms.txt">
 
-<link
-      rel="author"
-      href="seo/humans.txt">
+<link rel="author"
+      href="./humans.txt">
 
-<link
-      rel="security"
-      href="seo/security.txt">
+<link rel="security"
+      href="./security.txt">
 
-<!-- =====================================================
- Parte 1A termina aqui.
- A Parte 1B adicionará:
- - JSON-LD completo
- - CSP
- - Dados estruturados
- - Bootstrap inicial
-====================================================== -->
+<link rel="license"
+      href="./LICENSE">
 
-
-<!-- =====================================================
+<!-- ==========================================================
  JSON-LD
- Bellacosa Mainframe
- Java no IBM Z Simulator
-====================================================== -->
+ SoftwareApplication
+=========================================================== -->
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"SoftwareApplication",
-  "name":"Java no IBM Z Simulator",
-  "applicationCategory":"EducationalApplication",
-  "operatingSystem":"Any",
-  "applicationSubCategory":"IBM Mainframe Training Simulator",
-  "inLanguage":"pt-BR",
-  "offers":{
-    "@type":"Offer",
-    "price":"0",
-    "priceCurrency":"BRL"
-  },
-  "author":{
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+
+    "name":"Bellacosa Mainframe Java on IBM Z Simulator",
+
+    "applicationCategory":"EducationalApplication",
+
+    "applicationSubCategory":"IBM Mainframe Training",
+
+    "operatingSystem":"Any",
+
+    "inLanguage":"pt-BR",
+
+    "description":"Simulador gamificado para ensinar Java no IBM Z para programadores COBOL através de laboratórios, quizzes, arquitetura e desafios.",
+
+    "image":"https://eljefemidnightlunch.blogspot.com/assets/images/social-banner.webp",
+
+    "author":{
+        "@type":"Person",
+        "name":"Vagner Bellacosa"
+    },
+
+    "publisher":{
+        "@type":"Organization",
+        "name":"Bellacosa Mainframe"
+    },
+
+    "offers":{
+        "@type":"Offer",
+        "price":"0",
+        "priceCurrency":"BRL"
+    }
+
+}
+</script>
+
+<!-- ==========================================================
+ Course
+=========================================================== -->
+
+<script type="application/ld+json">
+{
+    "@context":"https://schema.org",
+
+    "@type":"Course",
+
+    "name":"Java on IBM Z",
+
+    "description":"Curso prático de Java para profissionais IBM Mainframe.",
+
+    "provider":{
+
+        "@type":"Organization",
+
+        "name":"Bellacosa Mainframe"
+
+    },
+
+    "educationalLevel":"Intermediate",
+
+    "teaches":[
+
+        "Java",
+
+        "IBM Z",
+
+        "COBOL",
+
+        "JCL",
+
+        "CICS",
+
+        "Db2",
+
+        "MQ",
+
+        "REST APIs"
+
+    ]
+
+}
+</script>
+
+<!-- ==========================================================
+ Organization
+=========================================================== -->
+
+<script type="application/ld+json">
+{
+    "@context":"https://schema.org",
+
+    "@type":"Organization",
+
+    "name":"Bellacosa Mainframe",
+
+    "url":"https://eljefemidnightlunch.blogspot.com/",
+
+    "logo":"https://eljefemidnightlunch.blogspot.com/assets/icons/logo.webp",
+
+    "founder":"Vagner Bellacosa"
+
+}
+</script>
+
+<!-- ==========================================================
+ Person
+=========================================================== -->
+
+<script type="application/ld+json">
+{
+    "@context":"https://schema.org",
+
     "@type":"Person",
-    "name":"Vagner Bellacosa"
-  },
-  "publisher":{
-    "@type":"Organization",
-    "name":"Bellacosa Mainframe"
-  },
-  "description":"Simulador gamificado para ensinar Java no IBM Z para programadores COBOL.",
-  "image":"Assets/image/social-banner.jpg"
+
+    "name":"Vagner Bellacosa",
+
+    "jobTitle":"IBM Mainframe Specialist",
+
+    "worksFor":{
+
+        "@type":"Organization",
+
+        "name":"Bellacosa Mainframe"
+
+    },
+
+    "knowsAbout":[
+
+        "IBM Z",
+
+        "Java",
+
+        "COBOL",
+
+        "CICS",
+
+        "Db2",
+
+        "MQ",
+
+        "JCL",
+
+        "z/OS"
+
+    ]
+
 }
 </script>
+
+<!-- ==========================================================
+ Website
+=========================================================== -->
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Course",
-  "name":"Java no IBM Z Simulator",
-  "description":"Curso prático gamificado para programadores COBOL aprenderem Java no IBM Z.",
-  "educationalLevel":"Beginner to Advanced",
-  "teaches":[
-    "Java",
-    "IBM Z",
-    "z/OS",
-    "COBOL",
-    "CICS",
-    "Db2",
-    "JVM",
-    "MQ",
-    "REST APIs"
-  ],
-  "provider":{
-    "@type":"Organization",
-    "name":"Bellacosa Mainframe"
-  }
+    "@context":"https://schema.org",
+
+    "@type":"WebSite",
+
+    "url":"https://eljefemidnightlunch.blogspot.com/",
+
+    "name":"Bellacosa Mainframe",
+
+    "inLanguage":"pt-BR"
+
 }
 </script>
+
+<!-- ==========================================================
+ WebPage
+=========================================================== -->
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "name":"Vagner Bellacosa",
-  "jobTitle":"IBM Mainframe Specialist",
-  "worksFor":{
-    "@type":"Organization",
-    "name":"Bellacosa Mainframe"
-  },
-  "knowsAbout":[
-    "IBM Z",
-    "COBOL",
-    "Java",
-    "CICS",
-    "Db2",
-    "JCL",
-    "z/OS",
-    "MQ"
-  ]
+    "@context":"https://schema.org",
+
+    "@type":"WebPage",
+
+    "name":"Bellacosa Mainframe Java on IBM Z Simulator",
+
+    "isPartOf":{
+
+        "@type":"WebSite",
+
+        "name":"Bellacosa Mainframe"
+
+    }
+
 }
 </script>
+
+<!-- ==========================================================
+ Breadcrumb
+=========================================================== -->
 
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"Organization",
- "name":"Bellacosa Mainframe",
- "url":"https://eljefemidnightlunch.blogspot.com/",
- "logo":"Assets/icons/logo.svg",
- "founder":"Vagner Bellacosa"
+    "@context":"https://schema.org",
+
+    "@type":"BreadcrumbList",
+
+    "itemListElement":[
+
+        {
+
+            "@type":"ListItem",
+
+            "position":1,
+
+            "name":"Home",
+
+            "item":"https://eljefemidnightlunch.blogspot.com/"
+
+        },
+
+        {
+
+            "@type":"ListItem",
+
+            "position":2,
+
+            "name":"Java on IBM Z Simulator"
+
+        }
+
+    ]
+
 }
 </script>
+
+<!-- ==========================================================
+ FAQ
+=========================================================== -->
 
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"WebSite",
- "name":"Bellacosa Mainframe",
- "url":"https://eljefemidnightlunch.blogspot.com/",
- "inLanguage":"pt-BR",
- "publisher":{
-   "@type":"Organization",
-   "name":"Bellacosa Mainframe"
- }
+    "@context":"https://schema.org",
+
+    "@type":"FAQPage",
+
+    "mainEntity":[
+
+        {
+
+            "@type":"Question",
+
+            "name":"Quem pode utilizar o simulador?",
+
+            "acceptedAnswer":{
+
+                "@type":"Answer",
+
+                "text":"Profissionais IBM Mainframe, estudantes, programadores COBOL e qualquer pessoa interessada em Java no IBM Z."
+
+            }
+
+        },
+
+        {
+
+            "@type":"Question",
+
+            "name":"É necessário instalar algum software?",
+
+            "acceptedAnswer":{
+
+                "@type":"Answer",
+
+                "text":"Não. O simulador funciona diretamente no navegador como uma Progressive Web Application."
+
+            }
+
+        },
+
+        {
+
+            "@type":"Question",
+
+            "name":"Funciona offline?",
+
+            "acceptedAnswer":{
+
+                "@type":"Answer",
+
+                "text":"Sim. Após o primeiro acesso, boa parte do conteúdo fica disponível através do Service Worker."
+
+            }
+
+        }
+
+    ]
+
 }
 </script>
 
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"BreadcrumbList",
- "itemListElement":[
-  {
-   "@type":"ListItem",
-   "position":1,
-   "name":"Home",
-   "item":"https://eljefemidnightlunch.blogspot.com/"
-  },
-  {
-   "@type":"ListItem",
-   "position":2,
-   "name":"Java no IBM Z Simulator"
-  }
- ]
-}
-</script>
-
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"FAQPage",
- "mainEntity":[
-
-  {
-   "@type":"Question",
-   "name":"Quem pode utilizar este simulador?",
-   "acceptedAnswer":{
-      "@type":"Answer",
-      "text":"Programadores COBOL, estudantes e profissionais IBM Z interessados em aprender Java."
-   }
-  },
-
-  {
-   "@type":"Question",
-   "name":"O simulador exige instalação?",
-   "acceptedAnswer":{
-      "@type":"Answer",
-      "text":"Não. O projeto foi desenvolvido como Progressive Web App e pode funcionar diretamente no navegador."
-   }
-  },
-
-  {
-   "@type":"Question",
-   "name":"Há laboratórios práticos?",
-   "acceptedAnswer":{
-      "@type":"Answer",
-      "text":"Sim. O simulador possui laboratórios, quizzes, batalhas contra Bosses, sistema de XP e certificados."
-   }
-  }
-
- ]
-}
-</script>
-
-<!-- =====================================================
+<!-- ==========================================================
  Content Security Policy
-====================================================== -->
+=========================================================== -->
 
-<meta
-http-equiv="Content-Security-Policy"
+<meta http-equiv="Content-Security-Policy"
+
 content="
-default-src 'self';
-script-src 'self' 'unsafe-inline';
-style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-font-src https://fonts.gstatic.com;
-img-src 'self' data: blob:;
-media-src 'self';
-connect-src 'self';
-object-src 'none';
-base-uri 'self';
-form-action 'self';
-upgrade-insecure-requests;">
 
-<!-- =====================================================
- Startup
-====================================================== -->
+default-src 'self';
+
+base-uri 'self';
+
+object-src 'none';
+
+frame-ancestors 'self';
+
+img-src 'self' data: blob: https:;
+
+font-src 'self' https://fonts.gstatic.com;
+
+style-src 'self'
+'https://fonts.googleapis.com'
+'unsafe-inline';
+
+script-src 'self';
+
+connect-src 'self';
+
+media-src 'self';
+
+manifest-src 'self';
+
+worker-src 'self';
+
+upgrade-insecure-requests;
+
+">
+
+<!-- ==========================================================
+ APP CONFIG
+=========================================================== -->
 
 <script>
 
 window.APP_CONFIG={
 
-    version:"1.0.0",
+    name:"Bellacosa Mainframe",
 
-    build:"2026.06.30",
+    application:"Java on IBM Z Simulator",
 
-    environment:"production",
+    version:"2.0.0",
+
+    build:"2026.07.01",
 
     language:"pt-BR",
 
     theme:"dark",
 
+    environment:"production",
+
     analytics:true,
 
     serviceWorker:true,
 
-    offline:true
+    offline:true,
+
+    cache:true,
+
+    debug:false
 
 };
+
+Object.freeze(
+
+    window.APP_CONFIG
+
+);
 
 window.APP_START=performance.now();
 
 </script>
 
-<script>
-
-document.documentElement.classList.add("loading");
-
-</script>
-
-<!-- =====================================================
- ES Modules
-====================================================== -->
-
-<script type="module">
-
-import analytics from "./js/core/analytics.js";
-import i18n from "./lang/i18n.js";
-
-window.analytics=analytics;
-window.i18n=i18n;
-
-await i18n.init();
-
-analytics.startSession();
-
-</script>
-
-<!-- =====================================================
- Service Worker
-====================================================== -->
+<!-- ==========================================================
+ Startup
+=========================================================== -->
 
 <script>
 
-if("serviceWorker" in navigator){
+document.documentElement.classList.add(
 
-window.addEventListener(
+    "loading"
 
-"load",
-
-()=>{
-
-navigator.serviceWorker.register(
-
-"./js/service-worker.js"
-
-)
-
-.catch(console.error);
-
-});
-
-}
+);
 
 </script>
 
-<!-- =====================================================
- Head Finalizado
-====================================================== -->
+<!-- ==========================================================
+ Bootstrap
+=========================================================== -->
+
+<script type="module"
+        src="./js/core/bootstrap.js">
+</script>
+
+<!-- ==========================================================
+ END HEAD
+=========================================================== -->
 
 </head>
 
-<h1 data-i18n="app.title"></h1>
-
-<button data-i18n="menu.start"></button>
-
-<input
-    data-i18n-placeholder="menu.search">
-	
-
 <body class="theme-dark">
+
+<!-- ==========================================================
+ APPLICATION
+=========================================================== -->
+
+<div id="application">
 
 <!-- ==========================================================
  Splash Screen
 =========================================================== -->
 
-<div
-    id="splash-screen"
-    class="startup fade-in"
+<section
+    id="startup-screen"
+    class="startup-screen"
     role="dialog"
-    aria-label="Splash Screen">
+    aria-label="Inicialização">
 
     <div class="startup-grid"></div>
 
     <div class="startup-glow"></div>
 
-    <section class="startup-panel">
+    <div class="startup-panel">
 
         <img
-            src="Assets/icons/logo.svg"
+            src="./assets/icons/logo.webp"
             alt="Bellacosa Mainframe"
-            class="startup-logo float">
+            class="startup-logo">
 
-        <h1 class="startup-title">
+        <h1>
 
-            Java no IBM Z Simulator
+            Java on IBM Z Simulator
 
         </h1>
 
-        <p class="startup-subtitle">
+        <p>
 
-            Laboratório Gamificado para Programadores COBOL
+            Bellacosa Mainframe
 
         </p>
-
-        <div class="startup-version">
-
-            Version 1.0.0
-
-        </div>
 
         <div class="startup-progress">
 
@@ -685,83 +829,67 @@ navigator.serviceWorker.register(
                 <div
                     id="startup-progress"
                     class="progress-fill">
+
                 </div>
-
-            </div>
-
-            <div
-                id="startup-status"
-                class="progress-text">
-
-                Inicializando...
 
             </div>
 
         </div>
 
-    </section>
+        <small
+            id="startup-status">
 
-</div>
+            Inicializando...
 
-<!-- ==========================================================
- Loading Overlay
-=========================================================== -->
-
-<div
-    id="loading-overlay"
-    class="loading hidden">
-
-    <div class="center">
-
-        <div class="loading-spinner rotate"></div>
+        </small>
 
     </div>
 
-</div>
+</section>
 
 <!-- ==========================================================
- Application
+ Loading
 =========================================================== -->
 
-<div id="application">
+<section
+    id="loading-overlay"
+    class="loading hidden">
+
+    <div class="loading-spinner"></div>
+
+</section>
 
 <!-- ==========================================================
- Header
+ HEADER
 =========================================================== -->
 
 <header
-    class="app-header shadow">
+    class="app-header">
 
     <div class="header-left">
 
         <button
-            id="menu-toggle"
-            class="icon-button"
-            aria-label="Abrir menu">
+            id="menu-toggle">
 
             ☰
 
         </button>
 
         <img
-            src="Assets/icons/logo.svg"
-            class="header-logo"
-            alt="Bellacosa Mainframe">
+            src="./assets/icons/logo.webp"
+            alt="Bellacosa">
 
         <div>
 
-            <h1
-                class="header-title"
-                data-i18n="app.name">
+            <h2>
 
-                Java no IBM Z Simulator
+                Java on IBM Z Simulator
 
-            </h1>
+            </h2>
 
-            <small
-                data-i18n="app.subtitle">
+            <small>
 
-                Laboratório Gamificado
+                Bellacosa Mainframe
 
             </small>
 
@@ -771,26 +899,24 @@ navigator.serviceWorker.register(
 
     <div class="header-right">
 
-        <div
+        <span
             id="player-level"
-            class="badge expert">
+            class="badge">
 
-            Nível 1
+            Lv 1
 
-        </div>
+        </span>
 
-        <div
+        <span
             id="player-xp"
-            class="badge success">
+            class="badge">
 
             XP 0
 
-        </div>
+        </span>
 
         <button
-            id="settings-button"
-            class="icon-button"
-            aria-label="Configurações">
+            id="settings-button">
 
             ⚙
 
@@ -801,1380 +927,116 @@ navigator.serviceWorker.register(
 </header>
 
 <!-- ==========================================================
- Navigation
+ SIDEBAR
 =========================================================== -->
 
 <nav
-    id="sidebar"
-    class="sidebar">
+    id="sidebar">
 
-    <ul>
+<ul>
 
-        <li>
+<li><a data-route="home">🏠 Home</a></li>
 
-            <a
-                href="#home"
-                data-route="home">
+<li><a data-route="labs">🧪 Labs</a></li>
 
-                🏠
-                <span data-i18n="menu.home"></span>
+<li><a data-route="architecture">🏛 Architecture</a></li>
 
-            </a>
+<li><a data-route="mapping">🔄 Mapping</a></li>
 
-        </li>
+<li><a data-route="timeline">📅 Timeline</a></li>
 
-        <li>
+<li><a data-route="quiz">❓ Quiz</a></li>
 
-            <a
-                href="#labs"
-                data-route="labs">
+<li><a data-route="boss">👹 Boss</a></li>
 
-                🧪
-                <span data-i18n="menu.labs"></span>
+<li><a data-route="leaderboard">🏆 Ranking</a></li>
 
-            </a>
+<li><a data-route="glossary">📚 Glossário</a></li>
 
-        </li>
+<li><a data-route="certificate">🎓 Certificado</a></li>
 
-        <li>
+<li><a data-route="settings">⚙ Configurações</a></li>
 
-            <a
-                href="#architecture"
-                data-route="architecture">
+<li><a data-route="about">ℹ Sobre</a></li>
 
-                🏛️
-                <span data-i18n="menu.architecture"></span>
+<li><a data-route="credits">❤️ Créditos</a></li>
 
-            </a>
-
-        </li>
-
-        <li>
-
-            <a
-                href="#mapping"
-                data-route="mapping">
-
-                🔄
-                <span data-i18n="menu.mapping"></span>
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a
-                href="#timeline"
-                data-route="timeline">
-
-                📅
-                <span data-i18n="menu.timeline"></span>
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a
-                href="#quiz"
-                data-route="quiz">
-
-                ❓
-                <span data-i18n="menu.quiz"></span>
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a
-                href="#boss">
-
-                👹
-                <span data-i18n="menu.boss"></span>
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a
-                href="#leaderboard">
-
-                🏆
-                <span data-i18n="menu.leaderboard"></span>
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a
-                href="#glossary">
-
-                📚
-                <span data-i18n="menu.glossary"></span>
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a
-                href="#certificate">
-
-                🎓
-                <span data-i18n="menu.certificate"></span>
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a
-                href="#about">
-
-                ℹ️
-                <span data-i18n="menu.about"></span>
-
-            </a>
-
-        </li>
-
-    </ul>
+</ul>
 
 </nav>
 
 <!-- ==========================================================
- Main Layout
+ MAIN
 =========================================================== -->
 
 <main
-    id="app"
-    class="app-container">
+    id="router-view">
 
-<!-- ==========================================================
- Router Outlet
-=========================================================== -->
+<!--
 
-<section
-    id="router-view"
-    class="router-view fade-in">
+Router carrega:
 
-<!-- páginas carregadas dinamicamente -->
+home.html
 
-</section>
+labs.html
+
+quiz.html
+
+boss.html
+
+architecture.html
+
+...
+
+-->
 
 </main>
-
-
-<!-- ==========================================================
- VIEW :: HOME
-=========================================================== -->
-
-<section
-    id="view-home"
-    class="view active fade-in"
-    data-view="home">
-
-    <div class="hero">
-
-        <div class="hero-content">
-
-            <h2 data-i18n="app.name">
-
-                Java no IBM Z Simulator
-
-            </h2>
-
-            <p data-i18n="messages.welcome">
-
-                Bem-vindo ao simulador.
-
-            </p>
-
-            <div class="hero-actions">
-
-                <button
-                    id="btn-start"
-                    class="btn btn-primary">
-
-                    ▶ Iniciar Jornada
-
-                </button>
-
-                <button
-                    id="btn-continue"
-                    class="btn btn-secondary">
-
-                    ⏯ Continuar
-
-                </button>
-
-            </div>
-
-        </div>
-
-        <div class="hero-image">
-
-            <img
-                src="Assets/image/background.webp"
-                loading="eager"
-                alt="IBM Z Datacenter">
-
-        </div>
-
-    </div>
-
-    <!-- Dashboard -->
-
-    <section class="dashboard-grid">
-
-        <article class="card">
-
-            <h3>⭐ XP</h3>
-
-            <strong id="dashboard-xp">
-
-                0
-
-            </strong>
-
-        </article>
-
-        <article class="card">
-
-            <h3>🏆 Nível</h3>
-
-            <strong id="dashboard-level">
-
-                1
-
-            </strong>
-
-        </article>
-
-        <article class="card">
-
-            <h3>🧪 Labs</h3>
-
-            <strong id="dashboard-labs">
-
-                0 / 20
-
-            </strong>
-
-        </article>
-
-        <article class="card">
-
-            <h3>🎓 Certificados</h3>
-
-            <strong id="dashboard-certificates">
-
-                0
-
-            </strong>
-
-        </article>
-
-    </section>
-
-</section>
-
-<!-- ==========================================================
- VIEW :: LABS
-=========================================================== -->
-
-<section
-    id="view-labs"
-    class="view hidden"
-    data-view="labs">
-
-    <header class="page-header">
-
-        <h2 data-i18n="menu.labs">
-
-            Laboratórios
-
-        </h2>
-
-        <input
-            id="lab-search"
-            class="search"
-            type="search"
-            placeholder="Pesquisar laboratório..."
-            data-i18n-placeholder="buttons.search">
-
-    </header>
-
-    <div
-        id="labs-grid"
-        class="lab-grid">
-
-        <!-- preenchido por lab-engine.js -->
-
-    </div>
-
-</section>
-
-<!-- ==========================================================
- VIEW :: ARCHITECTURE
-=========================================================== -->
-
-<section
-    id="view-architecture"
-    class="view hidden"
-    data-view="architecture">
-
-    <header class="page-header">
-
-        <h2 data-i18n="menu.architecture">
-
-            Arquitetura
-
-        </h2>
-
-    </header>
-
-    <div class="architecture-layout">
-
-        <aside class="architecture-sidebar">
-
-            <ul
-                id="architecture-tree"
-                class="tree">
-
-                <!-- architecture-engine.js -->
-
-            </ul>
-
-        </aside>
-
-        <main
-            class="architecture-main">
-
-            <div
-                id="architecture-diagram"
-                class="diagram">
-
-                <img
-                    src="Assets/image/jvm.png"
-                    alt="Arquitetura Java IBM Z">
-
-            </div>
-
-            <article
-                id="architecture-description"
-                class="card">
-
-                <h3>
-
-                    IBM Z + Java
-
-                </h3>
-
-                <p>
-
-                    Selecione um componente da arquitetura
-                    para visualizar detalhes.
-
-                </p>
-
-            </article>
-
-        </main>
-
-    </div>
-
-</section>
-
-
-<!-- ==========================================================
- VIEW :: MAPPING (COBOL → JAVA)
-========================================================== -->
-
-<section
-    id="view-mapping"
-    class="view hidden fade-in"
-    data-view="mapping">
-
-    <header class="page-header">
-
-        <div>
-
-            <h2 data-i18n="menu.mapping">
-
-                COBOL → Java
-
-            </h2>
-
-            <p>
-
-                Compare conceitos tradicionais do IBM Z com
-                seus equivalentes em Java.
-
-            </p>
-
-        </div>
-
-        <input
-            id="mapping-search"
-            class="search"
-            type="search"
-            data-i18n-placeholder="buttons.search"
-            placeholder="Pesquisar...">
-
-    </header>
-
-    <div
-        id="mapping-grid"
-        class="mapping-grid">
-
-        <!-- cards-engine.js / mapping-engine.js -->
-
-    </div>
-
-</section>
-
-<!-- ==========================================================
- VIEW :: TIMELINE
-========================================================== -->
-
-<section
-    id="view-timeline"
-    class="view hidden fade-in"
-    data-view="timeline">
-
-    <header class="page-header">
-
-        <h2 data-i18n="menu.timeline">
-
-            Linha do Tempo
-
-        </h2>
-
-    </header>
-
-    <div
-        id="timeline-progress"
-        class="timeline-progress">
-
-        <div
-            id="timeline-progress-bar"
-            class="timeline-progress-fill">
-
-        </div>
-
-    </div>
-
-    <div
-        id="timeline-container"
-        class="timeline-container">
-
-        <!-- timeline-engine.js -->
-
-    </div>
-
-</section>
-
-<!-- ==========================================================
- VIEW :: QUIZ
-========================================================== -->
-
-<section
-    id="view-quiz"
-    class="view hidden fade-in"
-    data-view="quiz">
-
-    <header class="page-header">
-
-        <div>
-
-            <h2 data-i18n="menu.quiz">
-
-                Quiz
-
-            </h2>
-
-            <small
-                id="quiz-counter">
-
-                Pergunta 1 / 20
-
-            </small>
-
-        </div>
-
-        <div
-            id="quiz-timer"
-            class="badge warning">
-
-            00:00
-
-        </div>
-
-    </header>
-
-    <!-- progresso -->
-
-    <div class="quiz-progress">
-
-        <div
-            id="quiz-progress-fill"
-            class="quiz-progress-fill">
-
-        </div>
-
-    </div>
-
-    <!-- cartão -->
-
-    <article
-        id="quiz-card"
-        class="quiz-card shadow">
-
-        <div
-            id="quiz-category"
-            class="badge">
-
-            Java
-
-        </div>
-
-        <h3
-            id="quiz-question">
-
-            Carregando pergunta...
-
-        </h3>
-
-        <div
-            id="quiz-image"
-            class="quiz-image hidden">
-
-            <img
-                src=""
-                alt="Questão">
-
-        </div>
-
-        <div
-            id="quiz-options"
-            class="quiz-options">
-
-            <!-- quiz.js -->
-
-        </div>
-
-    </article>
-
-    <!-- ações -->
-
-    <footer class="quiz-actions">
-
-        <button
-            id="quiz-previous"
-            class="btn btn-secondary">
-
-            ◀ Anterior
-
-        </button>
-
-        <button
-            id="quiz-next"
-            class="btn btn-primary">
-
-            Próxima ▶
-
-        </button>
-
-        <button
-            id="quiz-finish"
-            class="btn btn-success hidden">
-
-            Finalizar Quiz
-
-        </button>
-
-    </footer>
-
-    <!-- resultado -->
-
-    <section
-        id="quiz-result"
-        class="quiz-result hidden">
-
-        <h3>
-
-            Resultado
-
-        </h3>
-
-        <div class="dashboard-grid">
-
-            <article class="card">
-
-                <strong
-                    id="quiz-score">
-
-                    0%
-
-                </strong>
-
-                <span>Pontuação</span>
-
-            </article>
-
-            <article class="card">
-
-                <strong
-                    id="quiz-correct">
-
-                    0
-
-                </strong>
-
-                <span>Acertos</span>
-
-            </article>
-
-            <article class="card">
-
-                <strong
-                    id="quiz-wrong">
-
-                    0
-
-                </strong>
-
-                <span>Erros</span>
-
-            </article>
-
-            <article class="card">
-
-                <strong
-                    id="quiz-earned-xp">
-
-                    +0 XP
-
-                </strong>
-
-                <span>Experiência</span>
-
-            </article>
-
-        </div>
-
-        <div class="hero-actions">
-
-            <button
-                id="quiz-retry"
-                class="btn btn-warning">
-
-                Repetir
-
-            </button>
-
-            <button
-                id="quiz-back-home"
-                class="btn btn-primary">
-
-                Voltar ao Início
-
-            </button>
-
-        </div>
-
-    </section>
-
-</section>
-
-
-<!-- ==========================================================
- VIEW :: BOSS BATTLE
-========================================================== -->
-
-<section
-    id="view-boss"
-    class="view hidden fade-in"
-    data-view="boss">
-
-    <header class="page-header">
-
-        <div>
-
-            <h2 data-i18n="menu.boss">
-
-                Boss Battle
-
-            </h2>
-
-            <p>
-
-                Enfrente os desafios finais de cada módulo.
-
-            </p>
-
-        </div>
-
-        <span
-            id="boss-level"
-            class="badge danger">
-
-            Boss Lv.1
-
-        </span>
-
-    </header>
-
-    <div class="boss-layout">
-
-        <section class="boss-player">
-
-            <img
-                id="player-avatar"
-                src="Assets/image/avatar1.png"
-                alt="Jogador">
-
-            <h3 id="player-name">
-
-                Padawan Java
-
-            </h3>
-
-            <div class="life-bar">
-
-                <div
-                    id="player-life"
-                    class="life-fill success">
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="boss-center">
-
-            <img
-                id="boss-image"
-                src="Assets/image/boss.png"
-                alt="Boss">
-
-            <h2 id="boss-name">
-
-                Legacy Monster
-
-            </h2>
-
-            <div class="life-bar boss">
-
-                <div
-                    id="boss-life"
-                    class="life-fill danger">
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="boss-actions">
-
-            <button
-                id="boss-attack"
-                class="btn btn-danger">
-
-                ⚔ Atacar
-
-            </button>
-
-            <button
-                id="boss-skill"
-                class="btn btn-warning">
-
-                ✨ Skill
-
-            </button>
-
-            <button
-                id="boss-item"
-                class="btn btn-secondary">
-
-                🧪 Item
-
-            </button>
-
-        </section>
-
-    </div>
-
-</section>
-
-<!-- ==========================================================
- VIEW :: LEADERBOARD
-========================================================== -->
-
-<section
-    id="view-leaderboard"
-    class="view hidden fade-in"
-    data-view="leaderboard">
-
-    <header class="page-header">
-
-        <h2 data-i18n="menu.leaderboard">
-
-            Leaderboard
-
-        </h2>
-
-    </header>
-
-    <section
-        id="leaderboard-podium"
-        class="podium">
-
-        <!-- leaderboard.js -->
-
-    </section>
-
-    <table class="leaderboard-table">
-
-        <thead>
-
-            <tr>
-
-                <th>#</th>
-                <th>Jogador</th>
-                <th>Nível</th>
-                <th>XP</th>
-                <th>Conquistas</th>
-
-            </tr>
-
-        </thead>
-
-        <tbody id="leaderboard-body">
-
-            <!-- preenchido dinamicamente -->
-
-        </tbody>
-
-    </table>
-
-</section>
-
-<!-- ==========================================================
- VIEW :: GLOSSARY
-========================================================== -->
-
-<section
-    id="view-glossary"
-    class="view hidden fade-in"
-    data-view="glossary">
-
-    <header class="page-header">
-
-        <div>
-
-            <h2 data-i18n="menu.glossary">
-
-                Glossário
-
-            </h2>
-
-            <p>
-
-                Conceitos fundamentais de Java e IBM Z.
-
-            </p>
-
-        </div>
-
-        <input
-            id="glossary-search"
-            class="search"
-            type="search"
-            placeholder="Pesquisar termo..."
-            data-i18n-placeholder="glossary.search">
-
-    </header>
-
-    <nav
-        id="glossary-alphabet"
-        class="alphabet">
-
-        <!-- A-Z -->
-
-    </nav>
-
-    <section
-        id="glossary-grid"
-        class="glossary-grid">
-
-        <!-- glossary-engine.js -->
-
-    </section>
-
-</section>
-
-<!-- ==========================================================
- FIM DAS VIEWS PRINCIPAIS
-========================================================== -->
-
-
-<!-- ==========================================================
- VIEW :: CERTIFICATE
-=========================================================== -->
-
-<section
-    id="view-certificate"
-    class="view hidden fade-in"
-    data-view="certificate">
-
-    <header class="page-header">
-
-        <h2 data-i18n="menu.certificate">
-
-            Certificado
-
-        </h2>
-
-    </header>
-
-    <div class="certificate-layout">
-
-        <div class="certificate-preview">
-
-            <img
-                id="certificate-image"
-                src="Assets/image/certificate.png"
-                loading="lazy"
-                alt="Certificado Bellacosa Mainframe">
-
-        </div>
-
-        <div class="certificate-panel">
-
-            <label>
-
-                Nome do Aluno
-
-                <input
-                    id="certificate-name"
-                    type="text"
-                    maxlength="80">
-
-            </label>
-
-            <label>
-
-                Curso
-
-                <input
-                    id="certificate-course"
-                    type="text"
-                    value="Java no IBM Z Simulator"
-                    readonly>
-
-            </label>
-
-            <label>
-
-                Data
-
-                <input
-                    id="certificate-date"
-                    type="date">
-
-            </label>
-
-            <div class="certificate-actions">
-
-                <button
-                    id="generate-certificate"
-                    class="btn btn-success">
-
-                    🎓 Gerar Certificado
-
-                </button>
-
-                <button
-                    id="download-certificate"
-                    class="btn btn-primary">
-
-                    ⬇ Download
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ==========================================================
- VIEW :: SETTINGS
-=========================================================== -->
-
-<section
-    id="view-settings"
-    class="view hidden fade-in"
-    data-view="settings">
-
-    <header class="page-header">
-
-        <h2 data-i18n="menu.settings">
-
-            Configurações
-
-        </h2>
-
-    </header>
-
-    <div class="settings-grid">
-
-        <article class="card">
-
-            <h3>Idioma</h3>
-
-            <select id="language-selector">
-
-                <option value="pt-BR">
-
-                    Português
-
-                </option>
-
-                <option value="en-US">
-
-                    English
-
-                </option>
-
-            </select>
-
-        </article>
-
-        <article class="card">
-
-            <h3>Tema</h3>
-
-            <select id="theme-selector">
-
-                <option value="dark">
-
-                    Dark IBM Z
-
-                </option>
-
-                <option value="light">
-
-                    Light
-
-                </option>
-
-            </select>
-
-        </article>
-
-        <article class="card">
-
-            <h3>Áudio</h3>
-
-            <label>
-
-                <input
-                    id="music-enabled"
-                    type="checkbox"
-                    checked>
-
-                Música
-
-            </label>
-
-            <label>
-
-                <input
-                    id="effects-enabled"
-                    type="checkbox"
-                    checked>
-
-                Efeitos Sonoros
-
-            </label>
-
-        </article>
-
-        <article class="card">
-
-            <h3>Dados</h3>
-
-            <button
-                id="export-progress"
-                class="btn btn-secondary">
-
-                Exportar Progresso
-
-            </button>
-
-            <button
-                id="reset-progress"
-                class="btn btn-danger">
-
-                Restaurar Simulador
-
-            </button>
-
-        </article>
-
-    </div>
-
-</section>
-
-<!-- ==========================================================
- VIEW :: ABOUT
-=========================================================== -->
-
-<section
-    id="view-about"
-    class="view hidden fade-in"
-    data-view="about">
-
-    <header class="page-header">
-
-        <h2 data-i18n="menu.about">
-
-            Sobre
-
-        </h2>
-
-    </header>
-
-    <article class="card">
-
-        <img
-            src="Assets/icons/logo.svg"
-            class="about-logo"
-            alt="Bellacosa Mainframe">
-
-        <h3>
-
-            Java no IBM Z Simulator
-
-        </h3>
-
-        <p>
-
-            Plataforma gamificada desenvolvida para facilitar
-            a transição de programadores COBOL para Java
-            dentro do ecossistema IBM Z.
-
-        </p>
-
-        <ul class="about-list">
-
-            <li>Java</li>
-
-            <li>IBM Z</li>
-
-            <li>COBOL</li>
-
-            <li>Db2</li>
-
-            <li>CICS</li>
-
-            <li>MQ</li>
-
-            <li>JCL</li>
-
-            <li>z/OS</li>
-
-        </ul>
-
-    </article>
-
-</section>
-
-<!-- ==========================================================
- VIEW :: CREDITS
-=========================================================== -->
-
-<section
-    id="view-credits"
-    class="view hidden fade-in"
-    data-view="credits">
-
-    <header class="page-header">
-
-        <h2 data-i18n="menu.credits">
-
-            Créditos
-
-        </h2>
-
-    </header>
-
-    <div class="credits-grid">
-
-        <article class="card">
-
-            <h3>
-
-                👨‍💻 Autor
-
-            </h3>
-
-            <p>
-
-                Vagner Bellacosa
-
-            </p>
-
-        </article>
-
-        <article class="card">
-
-            <h3>
-
-                ☕ Projeto
-
-            </h3>
-
-            <p>
-
-                Bellacosa Mainframe
-
-            </p>
-
-        </article>
-
-        <article class="card">
-
-            <h3>
-
-                🖥 Tecnologias
-
-            </h3>
-
-            <ul>
-
-                <li>HTML5</li>
-
-                <li>CSS3</li>
-
-                <li>JavaScript ES2023</li>
-
-                <li>PWA</li>
-
-                <li>IBM Z</li>
-
-            </ul>
-
-        </article>
-
-        <article class="card">
-
-            <h3>
-
-                ❤️ Agradecimentos
-
-            </h3>
-
-            <p>
-
-                À comunidade IBM Z, aos profissionais de
-                Mainframe e a todos os alunos que mantêm essa
-                tecnologia viva.
-
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-
 
 <!-- ==========================================================
  FOOTER
 =========================================================== -->
 
-<footer class="app-footer">
+<footer
+    class="app-footer">
 
-    <div class="footer-left">
+<div>
 
-        <img
-            src="Assets/icons/logo.svg"
-            alt="Bellacosa Mainframe"
-            class="footer-logo">
+© 2026
 
-        <div>
+Bellacosa Mainframe
 
-            <strong>
+</div>
 
-                Java no IBM Z Simulator
+<div>
 
-            </strong>
+Version
 
-            <small>
+<span id="app-version">
 
-                © 2026 Bellacosa Mainframe
+2.0.0
 
-            </small>
+</span>
 
-        </div>
+</div>
 
-    </div>
+<div
+    id="network-status">
 
-    <div class="footer-center">
+🟢 Online
 
-        <span id="footer-version">
-
-            Version 1.0.0
-
-        </span>
-
-    </div>
-
-    <div class="footer-right">
-
-        <span id="footer-status">
-
-            🟢 Online
-
-        </span>
-
-    </div>
+</div>
 
 </footer>
 
 <!-- ==========================================================
- OFFLINE BANNER
+ OFFLINE
 =========================================================== -->
 
 <section
     id="offline-banner"
-    class="offline-banner hidden"
-    role="alert">
+    class="hidden">
 
-    <span>
-
-        📡 Você está utilizando o simulador em modo Offline.
-
-    </span>
+Modo Offline
 
 </section>
 
@@ -2183,160 +1045,16 @@ navigator.serviceWorker.register(
 =========================================================== -->
 
 <section
-    id="toast-container"
-    class="toast-container"
-    aria-live="polite"
-    aria-atomic="true">
+    id="toast-container">
 
 </section>
 
 <!-- ==========================================================
- MODAL UNIVERSAL
-=========================================================== -->
-
-<div
-    id="modal"
-    class="modal hidden"
-    aria-hidden="true">
-
-    <div class="modal-backdrop"></div>
-
-    <section
-        class="modal-window">
-
-        <header class="modal-header">
-
-            <h2 id="modal-title">
-
-                Título
-
-            </h2>
-
-            <button
-                id="modal-close"
-                class="icon-button"
-                aria-label="Fechar">
-
-                ✕
-
-            </button>
-
-        </header>
-
-        <div
-            id="modal-body"
-            class="modal-body">
-
-        </div>
-
-        <footer
-            id="modal-footer"
-            class="modal-footer">
-
-            <button
-                id="modal-ok"
-                class="btn btn-primary">
-
-                OK
-
-            </button>
-
-        </footer>
-
-    </section>
-
-</div>
-
-<!-- ==========================================================
- CONFIRM DIALOG
-=========================================================== -->
-
-<div
-    id="confirm-dialog"
-    class="modal hidden">
-
-    <div class="modal-backdrop"></div>
-
-    <section
-        class="modal-window small">
-
-        <header>
-
-            <h3>
-
-                Confirmação
-
-            </h3>
-
-        </header>
-
-        <div
-            id="confirm-message">
-
-            Deseja continuar?
-
-        </div>
-
-        <footer class="dialog-actions">
-
-            <button
-                id="confirm-no"
-                class="btn btn-secondary">
-
-                Cancelar
-
-            </button>
-
-            <button
-                id="confirm-yes"
-                class="btn btn-danger">
-
-                Confirmar
-
-            </button>
-
-        </footer>
-
-    </section>
-
-</div>
-
-<!-- ==========================================================
- ACHIEVEMENT POPUP
+ NOTIFICATION STACK
 =========================================================== -->
 
 <section
-    id="achievement-popup"
-    class="achievement-popup hidden">
-
-    <img
-        id="achievement-icon"
-        src="Assets/image/trophy.png"
-        alt="Achievement">
-
-    <div>
-
-        <small>
-
-            Conquista Desbloqueada
-
-        </small>
-
-        <h3
-            id="achievement-title">
-
-            Achievement
-
-        </h3>
-
-        <p
-            id="achievement-description">
-
-            ...
-
-        </p>
-
-    </div>
+    id="notification-stack">
 
 </section>
 
@@ -2346,76 +1064,84 @@ navigator.serviceWorker.register(
 
 <section
     id="xp-popup"
-    class="xp-popup hidden">
-
-    <span>
-
-        ⭐
-
-    </span>
-
-    <strong
-        id="xp-earned">
-
-        +100 XP
-
-    </strong>
+    class="hidden">
 
 </section>
 
 <!-- ==========================================================
- NOTIFICATION STACK
-=========================================================== -->
-
-<section
-    id="notification-stack"
-    class="notification-stack">
-
-</section>
-
-
-<!-- ==========================================================
- LEVEL UP POPUP
+ LEVEL UP
 =========================================================== -->
 
 <section
     id="levelup-popup"
-    class="levelup-popup hidden"
-    aria-live="assertive">
-
-    <img
-        src="Assets/image/trophy.png"
-        alt="Level Up"
-        class="levelup-icon">
-
-    <div>
-
-        <small>Nível Alcançado</small>
-
-        <h2 id="levelup-title">
-
-            Level 2
-
-        </h2>
-
-        <p id="levelup-message">
-
-            Continue sua jornada no IBM Z!
-
-        </p>
-
-    </div>
+    class="hidden">
 
 </section>
 
 <!-- ==========================================================
- PARTICLE LAYER
+ ACHIEVEMENTS
+=========================================================== -->
+
+<section
+    id="achievement-popup"
+    class="hidden">
+
+</section>
+
+<!-- ==========================================================
+ MODAL
+=========================================================== -->
+
+<div
+    id="modal"
+    class="hidden">
+
+<div class="modal-backdrop"></div>
+
+<div class="modal-window">
+
+<header>
+
+<h2 id="modal-title">
+
+</h2>
+
+</header>
+
+<div id="modal-body">
+
+</div>
+
+<footer>
+
+<button id="modal-ok">
+
+OK
+
+</button>
+
+</footer>
+
+</div>
+
+</div>
+
+<!-- ==========================================================
+ CONFIRM
+=========================================================== -->
+
+<div
+    id="confirm-dialog"
+    class="hidden">
+
+</div>
+
+<!-- ==========================================================
+ PARTICLES
 =========================================================== -->
 
 <canvas
-    id="particle-canvas"
-    class="particle-layer"
-    aria-hidden="true">
+    id="particle-canvas">
 
 </canvas>
 
@@ -2423,134 +1149,45 @@ navigator.serviceWorker.register(
  AUDIO
 =========================================================== -->
 
-<div id="audio-Assets">
+<div id="audio-assets">
 
-    <audio
-        id="bgm"
-        preload="auto"
-        loop>
+<audio id="bgm"></audio>
 
-        <source
-            src="Assets/audio/boss.mp3"
-            type="audio/mpeg">
+<audio id="click-sound"></audio>
 
-    </audio>
+<audio id="success-sound"></audio>
 
-    <audio
-        id="click-sound"
-        preload="auto">
+<audio id="error-sound"></audio>
 
-        <source
-            src="Assets/audio/click.mp3"
-            type="audio/mpeg">
-
-    </audio>
-
-    <audio
-        id="success-sound"
-        preload="auto">
-
-        <source
-            src="Assets/audio/success.mp3"
-            type="audio/mpeg">
-
-    </audio>
-
-    <audio
-        id="error-sound"
-        preload="auto">
-
-        <source
-            src="Assets/audio/error.mp3"
-            type="audio/mpeg">
-
-    </audio>
-
-    <audio
-        id="levelup-sound"
-        preload="auto">
-
-        <source
-            src="Assets/audio/levelup.mp3"
-            type="audio/mpeg">
-
-    </audio>
+<audio id="levelup-sound"></audio>
 
 </div>
 
 <!-- ==========================================================
- HTML TEMPLATES
+ HTML Templates
 =========================================================== -->
 
 <template id="toast-template">
 
-    <article class="toast">
+</template>
 
-        <span class="toast-icon"></span>
-
-        <div>
-
-            <strong class="toast-title"></strong>
-
-            <p class="toast-message"></p>
-
-        </div>
-
-    </article>
+<template id="modal-template">
 
 </template>
 
-<template id="lab-card-template">
-
-    <article class="lab-card">
-
-        <img
-            class="lab-image"
-            alt="Laboratório">
-
-        <div class="lab-body">
-
-            <h3 class="lab-title"></h3>
-
-            <p class="lab-description"></p>
-
-            <button
-                class="btn btn-primary">
-
-                Abrir
-
-            </button>
-
-        </div>
-
-    </article>
+<template id="card-template">
 
 </template>
 
 <template id="quiz-option-template">
 
-    <button
-        class="quiz-option">
-
-    </button>
-
 </template>
 
 <template id="achievement-template">
 
-    <article class="achievement-card">
-
-        <img
-            class="achievement-image"
-            alt="Achievement">
-
-        <h3 class="achievement-name"></h3>
-
-        <p class="achievement-description"></p>
-
-    </article>
-
 </template>
+
+</div>
 
 <!-- ==========================================================
  APPLICATION BOOTSTRAP
@@ -2558,45 +1195,351 @@ navigator.serviceWorker.register(
 
 <script type="module">
 
-import router from "./js/core/router.js";
-import analytics from "./js/core/analytics.js";
-import i18n from "./lang/i18n.js";
+import bootstrap from "./js/core/bootstrap.js";
 
-import "./js/core/config.js";
-import "./js/core/constants.js";
-import "./js/core/logger.js";
-import "./js/core/cache.js";
-import "./js/core/storage.js";
-import "./js/core/event-bus.js";
-import "./js/preload.js";
+bootstrap()
 
-import "./js/loading.js";
-import "./js/settings.js";
-import "./js/about.js";
-import "./js/credits.js";
-import "./js/leaderboard.js";
-import "./js/glossary.js";
-import "./js/certificate.js";
+    .then(() => {
 
-await i18n.init();
+        console.info(
 
-analytics.startSession();
+            "☕ Bellacosa Mainframe iniciado."
 
-await router.start();
+        );
 
-document.body.classList.remove("loading");
+    })
 
-document.body.classList.add("ready");
+    .catch(error => {
 
-window.dispatchEvent(
+        console.error(
 
-    new Event("applicationReady")
+            "Erro ao iniciar aplicação:",
+
+            error
+
+        );
+
+    });
+
+</script>
+
+<!-- ==========================================================
+ SERVICE WORKER
+=========================================================== -->
+
+<script>
+
+if ("serviceWorker" in navigator) {
+
+    window.addEventListener(
+
+        "load",
+
+        async () => {
+
+            try {
+
+                const registration =
+
+                    await navigator.serviceWorker.register(
+
+                        "./service-worker.js"
+
+                    );
+
+                console.info(
+
+                    "Service Worker registrado.",
+
+                    registration.scope
+
+                );
+
+                registration.addEventListener(
+
+                    "updatefound",
+
+                    () => {
+
+                        const worker =
+
+                            registration.installing;
+
+                        if (!worker) return;
+
+                        worker.addEventListener(
+
+                            "statechange",
+
+                            () => {
+
+                                if (
+
+                                    worker.state === "installed" &&
+
+                                    navigator.serviceWorker.controller
+
+                                ) {
+
+                                    console.info(
+
+                                        "Nova versão disponível."
+
+                                    );
+
+                                    worker.postMessage(
+
+                                        "skipWaiting"
+
+                                    );
+
+                                }
+
+                            }
+
+                        );
+
+                    }
+
+                );
+
+            }
+
+            catch (error) {
+
+                console.error(
+
+                    "Falha ao registrar Service Worker.",
+
+                    error
+
+                );
+
+            }
+
+        }
+
+    );
+
+}
+
+</script>
+
+<!-- ==========================================================
+ NETWORK STATUS
+=========================================================== -->
+
+<script>
+
+function updateNetworkStatus() {
+
+    const footer =
+
+        document.getElementById(
+
+            "network-status"
+
+        );
+
+    const banner =
+
+        document.getElementById(
+
+            "offline-banner"
+
+        );
+
+    if (!footer || !banner) {
+
+        return;
+
+    }
+
+    if (navigator.onLine) {
+
+        footer.textContent =
+
+            "🟢 Online";
+
+        banner.classList.add(
+
+            "hidden"
+
+        );
+
+    }
+
+    else {
+
+        footer.textContent =
+
+            "🔴 Offline";
+
+        banner.classList.remove(
+
+            "hidden"
+
+        );
+
+    }
+
+}
+
+window.addEventListener(
+
+    "online",
+
+    updateNetworkStatus
 
 );
 
-console.info(
+window.addEventListener(
 
-    "☕ Java no IBM Z Simulator iniciado."
+    "offline",
+
+    updateNetworkStatus
+
+);
+
+document.addEventListener(
+
+    "DOMContentLoaded",
+
+    updateNetworkStatus
+
+);
+
+</script>
+
+<!-- ==========================================================
+ VERSION
+=========================================================== -->
+
+<script>
+
+document.addEventListener(
+
+    "DOMContentLoaded",
+
+    () => {
+
+        const version =
+
+            document.getElementById(
+
+                "app-version"
+
+            );
+
+        if (
+
+            version &&
+
+            window.APP_CONFIG
+
+        ) {
+
+            version.textContent =
+
+                window.APP_CONFIG.version;
+
+        }
+
+    }
+
+);
+
+</script>
+
+<!-- ==========================================================
+ PWA INSTALL
+=========================================================== -->
+
+<script>
+
+let deferredPrompt = null;
+
+window.addEventListener(
+
+    "beforeinstallprompt",
+
+    event => {
+
+        event.preventDefault();
+
+        deferredPrompt = event;
+
+        window.dispatchEvent(
+
+            new CustomEvent(
+
+                "pwaReady"
+
+            )
+
+        );
+
+    }
+
+);
+
+window.addEventListener(
+
+    "appinstalled",
+
+    () => {
+
+        console.info(
+
+            "Aplicação instalada."
+
+        );
+
+        deferredPrompt = null;
+
+    }
+
+);
+
+</script>
+
+<!-- ==========================================================
+ PAGE VISIBILITY
+=========================================================== -->
+
+<script>
+
+document.addEventListener(
+
+    "visibilitychange",
+
+    () => {
+
+        if (
+
+            document.hidden
+
+        ) {
+
+            console.info(
+
+                "Aplicação em segundo plano."
+
+            );
+
+        }
+
+        else {
+
+            console.info(
+
+                "Aplicação ativa."
+
+            );
+
+        }
+
+    }
 
 );
 
@@ -2612,14 +1555,36 @@ console.info(
 
 <h2>
 
-JavaScript necessário
+JavaScript Necessário
 
 </h2>
 
 <p>
 
-Este simulador utiliza JavaScript para executar
-laboratórios, quizzes, gamificação e navegação.
+Este simulador utiliza JavaScript para executar:
+
+</p>
+
+<ul>
+
+<li>Laboratórios</li>
+
+<li>Quizzes</li>
+
+<li>Boss Battles</li>
+
+<li>Gamificação</li>
+
+<li>Persistência Offline</li>
+
+<li>PWA</li>
+
+</ul>
+
+<p>
+
+Ative o JavaScript para utilizar o Bellacosa Mainframe
+Java on IBM Z Simulator.
 
 </p>
 
@@ -2636,18 +1601,4 @@ laboratórios, quizzes, gamificação e navegação.
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

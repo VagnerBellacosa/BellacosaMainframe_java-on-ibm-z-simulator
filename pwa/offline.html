@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Bellacosa Mainframe - Offline</title>
+
+<meta name="theme-color" content="#0b0f19">
+
+<style>
+
+:root{
+
+    --bg:#07111d;
+    --panel:#0f1b2d;
+    --border:#2c7be5;
+    --text:#e8eef7;
+    --secondary:#8ea6c9;
+    --green:#49d17d;
+    --yellow:#ffd166;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+
+    background:linear-gradient(
+        180deg,
+        #07111d,
+        #0d1a2d
+    );
+
+    color:var(--text);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:30px;
+
+}
+
+.container{
+
+    width:min(700px,100%);
+
+    background:var(--panel);
+
+    border:2px solid var(--border);
+
+    border-radius:12px;
+
+    padding:40px;
+
+    box-shadow:
+        0 0 25px rgba(44,123,229,.30);
+
+}
+
+.logo{
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+.status{
+
+    color:var(--yellow);
+
+    font-size:1.1rem;
+
+    margin-bottom:20px;
+
+}
+
+h1{
+
+    margin-bottom:20px;
+
+    color:var(--green);
+
+}
+
+p{
+
+    line-height:1.8;
+
+    color:var(--secondary);
+
+    margin-bottom:18px;
+
+}
+
+.box{
+
+    background:#091321;
+
+    border-left:4px solid var(--green);
+
+    padding:18px;
+
+    margin:25px 0;
+
+}
+
+button{
+
+    background:#2c7be5;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 24px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    background:#4a91f0;
+
+}
+
+.footer{
+
+    margin-top:35px;
+
+    font-size:.9rem;
+
+    color:#7992b8;
+
+    text-align:center;
+
+}
+
+.blink{
+
+    animation:blink 1s infinite;
+
+}
+
+@keyframes blink{
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+
+        ☕ Bellacosa Mainframe
+
+    </div>
+
+    <div class="status">
+
+        ● TERMINAL STATUS:
+        <span class="blink">OFFLINE</span>
+
+    </div>
+
+    <h1>
+
+        Conexão indisponível
+
+    </h1>
+
+    <p>
+
+        O simulador detectou que não há conexão com a Internet.
+
+    </p>
+
+    <p>
+
+        Alguns recursos continuam disponíveis graças ao cache do navegador,
+        porém novos conteúdos, atualizações e rankings online não poderão ser carregados até que a conexão seja restabelecida.
+
+    </p>
+
+    <div class="box">
+
+        <strong>Recursos disponíveis:</strong>
+
+        <br><br>
+
+        ✔ Interface do simulador
+
+        <br>
+
+        ✔ Arquivos em cache
+
+        <br>
+
+        ✔ Conteúdo previamente visitado
+
+    </div>
+
+    <button onclick="reloadApp()">
+
+        Tentar novamente
+
+    </button>
+
+    <div class="footer">
+
+        Bellacosa Mainframe Java on IBM Z Simulator
+
+        <br><br>
+
+        "Grandes sistemas também sabem trabalhar offline."
+
+    </div>
+
+</div>
+
+<script>
+
+function reloadApp(){
+
+    window.location.reload();
+
+}
+
+window.addEventListener(
+
+    "online",
+
+    () => {
+
+        window.location.href="/";
+
+    }
+
+);
+
+</script>
+
+</body>
+
+</html>
