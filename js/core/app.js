@@ -4,14 +4,14 @@
  app.js
 =========================================================*/
 
-import CONFIG from "./config.js";
-import Router from "./router.js";
-import EventBus from "./event-bus.js";
-import Storage from "./storage.js";
-import Analytics from "./analytics.js";
-import Audio from "./audio.js";
-import Animation from "./animation.js";
-import Particles from "./particles.js";
+import CONFIG from "../js/core/config.js";
+import Router from "../js/core/router.js";
+import EventBus from "../js/core/event-bus.js";
+import Storage from "../js/core/storage.js";
+import Analytics from "../js/core/analytics.js";
+import Audio from "../js/audio.js";
+import Animation from "../js/animation.js";
+import Particles from "../js/particles.js";
 import Confetti from "./confetti.js";
 import XPManager from "./xp-manager.js";
 import Achievements from "./achievements.js";

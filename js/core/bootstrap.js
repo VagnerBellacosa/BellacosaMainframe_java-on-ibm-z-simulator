@@ -22,23 +22,23 @@
  * ==========================================================
  */
 
-import config from "./config.js";
+import config from "../js/core/config.js";
 
-import constants from "./constants.js";
+import constants from "../js/core/constants.js";
 
-import logger from "./logger.js";
+import logger from "../js/core/logger.js";
 
-import storage from "./storage.js";
+import storage from "../js/core/storage.js";
 
-import cache from "./cache.js";
+import cache from "../js/core/cache.js";
 
-import eventBus from "./event-bus.js";
+import eventBus from "../js/core/event-bus.js";
 
 import preload from "./preload.js";
 
-import router from "./router.js";
+import router from "../js/core/router.js";
 
-import analytics from "./analytics.js";
+import analytics from "../js/core/analytics.js";
 
 import i18n from "../lang/i18n.js";
 

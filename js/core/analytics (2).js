@@ -16,7 +16,7 @@
  * ============================================================
  */
 
-import Logger from "./logger.js";
+import Logger from "../js/core/logger.js";
 
 class Analytics {
 
