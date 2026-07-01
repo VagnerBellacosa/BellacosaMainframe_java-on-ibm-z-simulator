@@ -7,8 +7,8 @@
 /* teste */
 /* teste */
 /* teste */
-import EventBus from "../js/core/event-bus.js";
-import { CONFIG } from "../js/core/config.js";
+import EventBus from "./js/core/event-bus.js";
+import { CONFIG } from "./js/core/config.js";
 
 class AnalyticsManager {
 
