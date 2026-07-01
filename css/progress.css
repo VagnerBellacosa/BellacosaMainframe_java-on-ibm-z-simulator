@@ -1,0 +1,607 @@
+/*=========================================================
+ Bellacosa Mainframe
+ Java no IBM Z
+ progress.css
+=========================================================*/
+
+/*=========================================================
+ CONTAINER
+=========================================================*/
+
+.progress{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    margin:20px 0;
+
+}
+
+/*=========================================================
+ HEADER
+=========================================================*/
+
+.progress-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.progress-title{
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    color:var(--text-light);
+
+}
+
+.progress-value{
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    color:var(--color-primary);
+
+}
+
+/*=========================================================
+ BARRA BASE
+=========================================================*/
+
+.progress-track{
+
+    position:relative;
+
+    width:100%;
+
+    height:16px;
+
+    overflow:hidden;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid var(--border);
+
+}
+
+/*=========================================================
+ PREENCHIMENTO
+=========================================================*/
+
+.progress-fill{
+
+    position:relative;
+
+    width:0;
+
+    height:100%;
+
+    border-radius:999px;
+
+    background:var(--gradient-primary);
+
+    transition:width .45s ease;
+
+}
+
+/*=========================================================
+ BRILHO
+=========================================================*/
+
+.progress-fill::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            rgba(255,255,255,.35),
+
+            transparent
+
+        );
+
+    animation:progressGlow 2s linear infinite;
+
+}
+
+/*=========================================================
+ XP
+=========================================================*/
+
+.progress-xp .progress-fill{
+
+    background:var(--xp-bar);
+
+}
+
+/*=========================================================
+ BOSS
+=========================================================*/
+
+.progress-boss .progress-fill{
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #ff364f,
+
+            #ff8a3c
+
+        );
+
+}
+
+.progress-boss .progress-track{
+
+    border-color:var(--boss-life);
+
+}
+
+/*=========================================================
+ QUIZ
+=========================================================*/
+
+.progress-quiz .progress-fill{
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #00d9ff,
+
+            #00ff9d
+
+        );
+
+}
+
+/*=========================================================
+ DOWNLOAD
+=========================================================*/
+
+.progress-download .progress-fill{
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #4fc3f7,
+
+            #1565c0
+
+        );
+
+}
+
+/*=========================================================
+ TERMINAL
+=========================================================*/
+
+.progress-terminal .progress-track{
+
+    background:var(--terminal-bg);
+
+    border-color:var(--terminal-border);
+
+}
+
+.progress-terminal .progress-fill{
+
+    background:var(--terminal-green);
+
+}
+
+/*=========================================================
+ CÍRCULO
+=========================================================*/
+
+.progress-circle{
+
+    position:relative;
+
+    width:160px;
+
+    height:160px;
+
+    margin:auto;
+
+}
+
+.progress-circle svg{
+
+    width:160px;
+
+    height:160px;
+
+    transform:rotate(-90deg);
+
+}
+
+.progress-circle-track{
+
+    fill:none;
+
+    stroke:rgba(255,255,255,.08);
+
+    stroke-width:10;
+
+}
+
+.progress-circle-fill{
+
+    fill:none;
+
+    stroke:var(--color-primary);
+
+    stroke-width:10;
+
+    stroke-linecap:round;
+
+    stroke-dasharray:440;
+
+    stroke-dashoffset:440;
+
+    transition:stroke-dashoffset .6s ease;
+
+}
+
+.progress-circle-label{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+}
+
+.progress-circle-value{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:var(--color-primary);
+
+}
+
+.progress-circle-text{
+
+    color:var(--text-muted);
+
+    font-size:.9rem;
+
+}
+
+/*=========================================================
+ STEPS
+=========================================================*/
+
+.progress-steps{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    margin:40px 0;
+
+}
+
+.progress-step{
+
+    flex:1;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+.progress-step::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:22px;
+
+    left:50%;
+
+    width:100%;
+
+    height:3px;
+
+    background:rgba(255,255,255,.08);
+
+    z-index:0;
+
+}
+
+.progress-step:last-child::after{
+
+    display:none;
+
+}
+
+.progress-step-number{
+
+    position:relative;
+
+    z-index:2;
+
+    width:44px;
+
+    height:44px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:var(--bg-panel);
+
+    border:2px solid var(--border);
+
+    font-weight:700;
+
+}
+
+.progress-step.active .progress-step-number{
+
+    background:var(--gradient-primary);
+
+    color:#00141c;
+
+}
+
+.progress-step.completed .progress-step-number{
+
+    background:var(--gradient-success);
+
+    color:#00150d;
+
+}
+
+.progress-step-label{
+
+    margin-top:12px;
+
+    font-size:.9rem;
+
+    color:var(--text-muted);
+
+}
+
+/*=========================================================
+ XP FLOAT
+=========================================================*/
+
+.progress-earned{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:rgba(0,255,157,.12);
+
+    color:var(--xp-color);
+
+    font-weight:700;
+
+}
+
+/*=========================================================
+ STATUS
+=========================================================*/
+
+.progress-status{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    margin-top:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.progress-chip{
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid var(--border);
+
+    font-size:.85rem;
+
+}
+
+/*=========================================================
+ ANIMAÇÕES
+=========================================================*/
+
+.progress-striped{
+
+    background-size:35px 35px;
+
+    background-image:
+
+        linear-gradient(
+
+            45deg,
+
+            rgba(255,255,255,.15) 25%,
+
+            transparent 25%,
+
+            transparent 50%,
+
+            rgba(255,255,255,.15) 50%,
+
+            rgba(255,255,255,.15) 75%,
+
+            transparent 75%,
+
+            transparent
+
+        );
+
+    animation:progressMove 1.2s linear infinite;
+
+}
+
+@keyframes progressMove{
+
+    from{
+
+        background-position:0 0;
+
+    }
+
+    to{
+
+        background-position:35px 0;
+
+    }
+
+}
+
+@keyframes progressGlow{
+
+    from{
+
+        transform:translateX(-120%);
+
+    }
+
+    to{
+
+        transform:translateX(220%);
+
+    }
+
+}
+
+/*=========================================================
+ RESPONSIVO
+=========================================================*/
+
+@media(max-width:768px){
+
+.progress-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.progress-steps{
+
+    flex-direction:column;
+
+}
+
+.progress-step::after{
+
+    display:none;
+
+}
+
+.progress-circle{
+
+    width:130px;
+
+    height:130px;
+
+}
+
+.progress-circle svg{
+
+    width:130px;
+
+    height:130px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.progress-track{
+
+    height:14px;
+
+}
+
+.progress-circle-value{
+
+    font-size:1.6rem;
+
+}
+
+.progress-status{
+
+    flex-direction:column;
+
+}
+
+}

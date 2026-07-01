@@ -1,1 +1,154 @@
-{}
+{
+  "version": "1.0",
+  "title": "Jornada Java no IBM Z",
+  "duration": "5 minutos",
+  "language": "pt-BR",
+
+  "steps": [
+
+    {
+      "id": "intro",
+      "order": 1,
+      "title": "☕ Um Café no Bellacosa Mainframe",
+      "subtitle": "Sua jornada começa",
+      "icon": "☕",
+      "duration": 20,
+      "xp": 50,
+      "type": "intro",
+      "description": "Descubra por que Java faz parte do ecossistema IBM Z."
+    },
+
+    {
+      "id": "mission",
+      "order": 2,
+      "title": "🎯 Sua Missão",
+      "subtitle": "De COBOL para Java",
+      "icon": "🎯",
+      "duration": 20,
+      "xp": 50,
+      "type": "story",
+      "description": "Você é um desenvolvedor COBOL convocado para modernizar aplicações críticas."
+    },
+
+    {
+      "id": "architecture",
+      "order": 3,
+      "title": "🏛 Conheça a Arquitetura",
+      "subtitle": "Onde Java vive",
+      "icon": "🏛",
+      "duration": 40,
+      "xp": 100,
+      "type": "lesson",
+      "description": "Entenda JVM, z/OS, CICS, Db2 e integração com COBOL."
+    },
+
+    {
+      "id": "class",
+      "order": 4,
+      "title": "📦 Classes",
+      "subtitle": "O PROGRAM-ID do Java",
+      "icon": "📦",
+      "duration": 35,
+      "xp": 100,
+      "type": "lesson",
+      "description": "Uma classe é o molde utilizado para criar objetos."
+    },
+
+    {
+      "id": "object",
+      "order": 5,
+      "title": "🧩 Objetos",
+      "subtitle": "Instâncias da Classe",
+      "icon": "🧩",
+      "duration": 35,
+      "xp": 100,
+      "type": "lesson",
+      "description": "Aprenda como objetos representam entidades reais."
+    },
+
+    {
+      "id": "methods",
+      "order": 6,
+      "title": "⚙ Métodos",
+      "subtitle": "O PERFORM do Java",
+      "icon": "⚙",
+      "duration": 35,
+      "xp": 100,
+      "type": "lesson",
+      "description": "Métodos agrupam comportamentos dentro das classes."
+    },
+
+    {
+      "id": "memory",
+      "order": 7,
+      "title": "🧠 Heap x Stack",
+      "subtitle": "Como Java usa memória",
+      "icon": "🧠",
+      "duration": 35,
+      "xp": 100,
+      "type": "lesson",
+      "description": "Compare a memória Java com Working-Storage e Local-Storage."
+    },
+
+    {
+      "id": "dragdrop",
+      "order": 8,
+      "title": "🧩 Arraste e Solte",
+      "subtitle": "Associe conceitos",
+      "icon": "🧩",
+      "duration": 45,
+      "xp": 200,
+      "type": "dragdrop",
+      "description": "Relacione conceitos COBOL com Java."
+    },
+
+    {
+      "id": "terminal",
+      "order": 9,
+      "title": "💻 Terminal IBM Z",
+      "subtitle": "Hora de executar",
+      "icon": "💻",
+      "duration": 35,
+      "xp": 150,
+      "type": "terminal",
+      "description": "Compile e execute um programa Java."
+    },
+
+    {
+      "id": "quiz",
+      "order": 10,
+      "title": "❓ Quiz Padawan",
+      "subtitle": "Teste seus conhecimentos",
+      "icon": "❓",
+      "duration": 90,
+      "xp": 500,
+      "type": "quiz",
+      "description": "Responda corretamente para ganhar XP."
+    },
+
+    {
+      "id": "boss",
+      "order": 11,
+      "title": "👹 Boss Final",
+      "subtitle": "Legacy Monster",
+      "icon": "👹",
+      "duration": 45,
+      "xp": 1000,
+      "type": "boss",
+      "description": "Use todo o conhecimento adquirido para derrotar o Legacy Monster."
+    },
+
+    {
+      "id": "certificate",
+      "order": 12,
+      "title": "🎓 Certificação",
+      "subtitle": "Java Padawan",
+      "icon": "🎓",
+      "duration": 15,
+      "xp": 500,
+      "type": "certificate",
+      "description": "Receba seu certificado Bellacosa Mainframe."
+    }
+
+  ]
+}

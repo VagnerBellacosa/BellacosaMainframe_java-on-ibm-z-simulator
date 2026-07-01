@@ -1,0 +1,8 @@
+```text
+Contact: mailto:contato@bellacosamainframe.com.br
+Expires: 2027-06-30T23:59:59Z
+Preferred-Languages: pt-BR,en
+Canonical: https://SEU-DOMINIO.com/security.txt
+Policy: https://SEU-DOMINIO.com/security
+Acknowledgments: https://SEU-DOMINIO.com/hall-of-fame
+```

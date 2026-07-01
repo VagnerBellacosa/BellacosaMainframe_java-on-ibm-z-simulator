@@ -1,0 +1,537 @@
+/*=========================================================
+ Bellacosa Mainframe
+ Java no IBM Z
+ buttons.css
+=========================================================*/
+
+/*=========================================================
+ BOTÃO BASE
+=========================================================*/
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:var(--radius-md);
+
+    cursor:pointer;
+
+    font-family:var(--font-main);
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:all .25s ease;
+
+    user-select:none;
+
+    position:relative;
+
+    overflow:hidden;
+
+    white-space:nowrap;
+
+}
+
+/*=========================================================
+ EFEITO BRILHO
+=========================================================*/
+
+.btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:70%;
+
+    height:100%;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            rgba(255,255,255,.35),
+
+            transparent
+
+        );
+
+    transition:left .6s;
+
+}
+
+.btn:hover::before{
+
+    left:140%;
+
+}
+
+/*=========================================================
+ HOVER
+=========================================================*/
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow-glow);
+
+}
+
+.btn:active{
+
+    transform:scale(.96);
+
+}
+
+.btn:focus-visible{
+
+    outline:2px solid var(--color-primary);
+
+    outline-offset:3px;
+
+}
+
+/*=========================================================
+ PRIMÁRIO
+=========================================================*/
+
+.btn-primary{
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+}
+
+/*=========================================================
+ SUCCESS
+=========================================================*/
+
+.btn-success{
+
+    background:var(--gradient-success);
+
+    color:#00120A;
+
+}
+
+/*=========================================================
+ DANGER
+=========================================================*/
+
+.btn-danger{
+
+    background:var(--gradient-danger);
+
+    color:#fff;
+
+}
+
+/*=========================================================
+ GLASS
+=========================================================*/
+
+.btn-glass{
+
+    background:var(--glass);
+
+    color:var(--text);
+
+    border:1px solid var(--border);
+
+    backdrop-filter:blur(10px);
+
+}
+
+/*=========================================================
+ OUTLINE
+=========================================================*/
+
+.btn-outline{
+
+    background:transparent;
+
+    border:2px solid var(--color-primary);
+
+    color:var(--color-primary);
+
+}
+
+.btn-outline:hover{
+
+    background:var(--color-primary);
+
+    color:#00141C;
+
+}
+
+/*=========================================================
+ TERMINAL
+=========================================================*/
+
+.btn-terminal{
+
+    background:var(--terminal-bg);
+
+    color:var(--terminal-green);
+
+    border:1px solid var(--terminal-green);
+
+    font-family:var(--font-code);
+
+}
+
+.btn-terminal:hover{
+
+    box-shadow:
+
+        0 0 20px rgba(0,255,136,.35);
+
+}
+
+/*=========================================================
+ QUIZ
+=========================================================*/
+
+.btn-quiz{
+
+    width:100%;
+
+    justify-content:flex-start;
+
+    background:var(--bg-panel);
+
+    border:1px solid var(--border);
+
+    color:var(--text);
+
+}
+
+.btn-quiz:hover{
+
+    border-color:var(--color-primary);
+
+}
+
+.btn-correct{
+
+    background:var(--quiz-correct);
+
+    color:#002A18;
+
+}
+
+.btn-wrong{
+
+    background:var(--quiz-wrong);
+
+    color:#fff;
+
+}
+
+/*=========================================================
+ BOSS
+=========================================================*/
+
+.btn-attack{
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #FF364F,
+
+            #FF8A3C
+
+        );
+
+    color:#fff;
+
+    font-size:1.15rem;
+
+    padding:18px 40px;
+
+    animation:pulse 1.6s infinite;
+
+}
+
+.btn-attack:hover{
+
+    box-shadow:
+
+        var(--boss-glow);
+
+}
+
+/*=========================================================
+ NAVEGAÇÃO
+=========================================================*/
+
+.btn-next{
+
+    background:var(--gradient-success);
+
+    color:#00120A;
+
+}
+
+.btn-back{
+
+    background:var(--glass);
+
+    border:1px solid var(--border);
+
+    color:var(--text);
+
+}
+
+/*=========================================================
+ MINI
+=========================================================*/
+
+.btn-sm{
+
+    padding:8px 16px;
+
+    font-size:.9rem;
+
+}
+
+.btn-lg{
+
+    padding:18px 36px;
+
+    font-size:1.2rem;
+
+}
+
+.btn-xl{
+
+    padding:22px 48px;
+
+    font-size:1.4rem;
+
+}
+
+/*=========================================================
+ ÍCONES
+=========================================================*/
+
+.btn-icon{
+
+    width:54px;
+
+    height:54px;
+
+    padding:0;
+
+    border-radius:50%;
+
+}
+
+/*=========================================================
+ DESABILITADO
+=========================================================*/
+
+.btn:disabled,
+
+.btn.disabled{
+
+    opacity:.45;
+
+    cursor:not-allowed;
+
+    pointer-events:none;
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+
+/*=========================================================
+ LOADING
+=========================================================*/
+
+.btn-loading{
+
+    color:transparent;
+
+    pointer-events:none;
+
+}
+
+.btn-loading::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    border:3px solid rgba(255,255,255,.3);
+
+    border-top-color:#fff;
+
+    animation:rotate360 .8s linear infinite;
+
+}
+
+/*=========================================================
+ GRUPO
+=========================================================*/
+
+.btn-group{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+/*=========================================================
+ FULL
+=========================================================*/
+
+.btn-block{
+
+    width:100%;
+
+}
+
+/*=========================================================
+ BADGE
+=========================================================*/
+
+.btn-badge{
+
+    position:absolute;
+
+    top:-8px;
+
+    right:-8px;
+
+    min-width:22px;
+
+    height:22px;
+
+    padding:0 6px;
+
+    border-radius:20px;
+
+    background:var(--color-danger);
+
+    color:#fff;
+
+    font-size:.75rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+/*=========================================================
+ XP
+=========================================================*/
+
+.btn-xp{
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #00FF9D,
+
+            #00D9FF
+
+        );
+
+    color:#002A18;
+
+}
+
+/*=========================================================
+ CERTIFICADO
+=========================================================*/
+
+.btn-certificate{
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #FFD34D,
+
+            #FFB300
+
+        );
+
+    color:#3B2800;
+
+}
+
+/*=========================================================
+ RESPONSIVO
+=========================================================*/
+
+@media(max-width:768px){
+
+.btn{
+
+    width:100%;
+
+}
+
+.btn-group{
+
+    flex-direction:column;
+
+}
+
+.btn-icon{
+
+    width:48px;
+
+    height:48px;
+
+}
+
+}

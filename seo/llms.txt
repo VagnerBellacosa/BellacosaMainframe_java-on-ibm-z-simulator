@@ -1,0 +1,34 @@
+# Bellacosa Mainframe
+
+Project:
+Java no IBM Z Simulator
+
+Purpose:
+Educational simulator for IBM Mainframe developers.
+
+Audience:
+COBOL Developers
+IBM Z Students
+Java Developers
+Mainframe Architects
+
+Topics:
+Java
+IBM Z
+COBOL
+CICS
+Db2
+MQ
+JCL
+z/OS
+
+License:
+Copyright © Vagner Bellacosa
+
+Preferred Citation:
+Bellacosa Mainframe
+https://SEU-DOMINIO.com
+
+AI Usage:
+Content may be indexed and summarized with attribution.
+Do not remove author credits.

@@ -1,1 +1,193 @@
-{}
+
+{
+  "version": "1.0",
+  "title": "Bellacosa Mainframe - Achievements",
+  "language": "pt-BR",
+  "achievements": [
+    {
+      "id": "first-step",
+      "title": "☕ Primeiro Café",
+      "description": "Inicie o laboratório.",
+      "icon": "☕",
+      "xp": 50,
+      "hidden": false
+    },
+    {
+      "id": "hello-java",
+      "title": "☕ Hello Java",
+      "description": "Execute o primeiro programa Java.",
+      "icon": "☕",
+      "xp": 100,
+      "hidden": false
+    },
+    {
+      "id": "class-master",
+      "title": "📦 Mestre das Classes",
+      "description": "Compreenda o conceito de Class.",
+      "icon": "📦",
+      "xp": 100,
+      "hidden": false
+    },
+    {
+      "id": "method-master",
+      "title": "⚙ Mestre dos Métodos",
+      "description": "Utilize métodos corretamente.",
+      "icon": "⚙",
+      "xp": 100,
+      "hidden": false
+    },
+    {
+      "id": "object-created",
+      "title": "🧩 Primeiro Objeto",
+      "description": "Crie seu primeiro objeto usando new.",
+      "icon": "🧩",
+      "xp": 120,
+      "hidden": false
+    },
+    {
+      "id": "quiz-1",
+      "title": "🎯 Primeiro Acerto",
+      "description": "Acerte a primeira questão.",
+      "icon": "🎯",
+      "xp": 50,
+      "hidden": false
+    },
+    {
+      "id": "quiz-5",
+      "title": "📚 Estudioso",
+      "description": "Acerte cinco perguntas.",
+      "icon": "📚",
+      "xp": 150,
+      "hidden": false
+    },
+    {
+      "id": "quiz-perfect",
+      "title": "💯 Gabaritou",
+      "description": "Acerte todas as perguntas.",
+      "icon": "💯",
+      "xp": 500,
+      "hidden": false
+    },
+    {
+      "id": "combo-3",
+      "title": "🔥 Combo x3",
+      "description": "Três respostas corretas consecutivas.",
+      "icon": "🔥",
+      "xp": 150,
+      "hidden": false
+    },
+    {
+      "id": "combo-5",
+      "title": "⚡ Combo x5",
+      "description": "Cinco respostas corretas consecutivas.",
+      "icon": "⚡",
+      "xp": 250,
+      "hidden": false
+    },
+    {
+      "id": "speed-runner",
+      "title": "⏱ Muito Rápido",
+      "description": "Conclua o quiz em menos de 3 minutos.",
+      "icon": "⏱",
+      "xp": 250,
+      "hidden": false
+    },
+    {
+      "id": "terminal-user",
+      "title": "💻 Terminal Hacker",
+      "description": "Utilize o terminal do laboratório.",
+      "icon": "💻",
+      "xp": 100,
+      "hidden": false
+    },
+    {
+      "id": "dragdrop-master",
+      "title": "🧠 Mestre das Associações",
+      "description": "Complete o desafio Drag & Drop.",
+      "icon": "🧠",
+      "xp": 200,
+      "hidden": false
+    },
+    {
+      "id": "timeline-complete",
+      "title": "🛤 Jornada Completa",
+      "description": "Visite todas as etapas da timeline.",
+      "icon": "🛤",
+      "xp": 150,
+      "hidden": false
+    },
+    {
+      "id": "level-2",
+      "title": "⭐ Nível 2",
+      "description": "Alcance o nível 2.",
+      "icon": "⭐",
+      "xp": 50,
+      "hidden": false
+    },
+    {
+      "id": "level-5",
+      "title": "⭐⭐ Nível 5",
+      "description": "Alcance o nível 5.",
+      "icon": "⭐⭐",
+      "xp": 250,
+      "hidden": false
+    },
+    {
+      "id": "level-10",
+      "title": "🌟 Arquiteto IBM Z",
+      "description": "Alcance o nível máximo.",
+      "icon": "🌟",
+      "xp": 1000,
+      "hidden": false
+    },
+    {
+      "id": "boss-found",
+      "title": "👹 Boss Encontrado",
+      "description": "Desbloqueie a batalha final.",
+      "icon": "👹",
+      "xp": 200,
+      "hidden": false
+    },
+    {
+      "id": "boss-defeated",
+      "title": "🏆 Java Hero",
+      "description": "Derrote o Boss Final.",
+      "icon": "🏆",
+      "xp": 1000,
+      "hidden": false
+    },
+    {
+      "id": "certificate",
+      "title": "🎓 Padawan Promovido",
+      "description": "Conquiste o certificado do laboratório.",
+      "icon": "🎓",
+      "xp": 500,
+      "hidden": false
+    },
+    {
+      "id": "secret-mainframe",
+      "title": "🖥 Guardião do Mainframe",
+      "description": "Descubra um segredo escondido.",
+      "icon": "🖥",
+      "xp": 750,
+      "hidden": true
+    },
+    {
+      "id": "coffee-lover",
+      "title": "☕ Um Café no Bellacosa",
+      "description": "Clique cinco vezes na xícara de café.",
+      "icon": "☕",
+      "xp": 100,
+      "hidden": true
+    },
+    {
+      "id": "java-padawan",
+      "title": "🚀 Java Padawan",
+      "description": "Complete 100% do laboratório.",
+      "icon": "🚀",
+      "xp": 1500,
+      "hidden": false
+    }
+  ]
+}
+

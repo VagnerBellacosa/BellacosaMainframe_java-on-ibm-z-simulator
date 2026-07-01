@@ -1,0 +1,521 @@
+/*=========================================================
+ Bellacosa Mainframe
+ Java no IBM Z
+ quiz.css
+=========================================================*/
+
+/*=========================================================
+ CONTAINER
+=========================================================*/
+
+.quiz-container{
+
+    width:min(1000px,95%);
+
+    margin:auto;
+
+}
+
+/*=========================================================
+ HEADER
+=========================================================*/
+
+.quiz-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.quiz-counter{
+
+    color:var(--text-muted);
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+}
+
+.quiz-score{
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:var(--gradient-success);
+
+    color:#00150d;
+
+    font-weight:700;
+
+}
+
+/*=========================================================
+ PERGUNTA
+=========================================================*/
+
+.quiz-question{
+
+    font-size:1.6rem;
+
+    font-weight:700;
+
+    line-height:1.5;
+
+    color:var(--text-light);
+
+    margin-bottom:30px;
+
+}
+
+/*=========================================================
+ OPÇÕES
+=========================================================*/
+
+.quiz-options{
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+.quiz-option{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px 20px;
+
+    background:var(--bg-panel);
+
+    border:2px solid var(--border);
+
+    border-radius:var(--radius-md);
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+}
+
+.quiz-option:hover{
+
+    border-color:var(--color-primary);
+
+    transform:translateX(8px);
+
+    box-shadow:var(--shadow-glow);
+
+}
+
+.quiz-option.disabled{
+
+    pointer-events:none;
+
+}
+
+/*=========================================================
+ LETRA
+=========================================================*/
+
+.quiz-letter{
+
+    width:44px;
+
+    height:44px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--gradient-primary);
+
+    color:#00141c;
+
+    font-weight:700;
+
+    flex-shrink:0;
+
+}
+
+.quiz-text{
+
+    flex:1;
+
+    font-size:1.05rem;
+
+}
+
+/*=========================================================
+ CORREÇÃO
+=========================================================*/
+
+.quiz-option.correct{
+
+    border-color:var(--quiz-correct);
+
+    background:rgba(0,255,157,.15);
+
+}
+
+.quiz-option.correct .quiz-letter{
+
+    background:var(--quiz-correct);
+
+}
+
+.quiz-option.wrong{
+
+    border-color:var(--quiz-wrong);
+
+    background:rgba(255,91,107,.18);
+
+}
+
+.quiz-option.wrong .quiz-letter{
+
+    background:var(--quiz-wrong);
+
+    color:#fff;
+
+}
+
+/*=========================================================
+ FEEDBACK
+=========================================================*/
+
+.quiz-feedback{
+
+    margin-top:25px;
+
+    padding:20px;
+
+    border-left:5px solid var(--color-primary);
+
+    border-radius:var(--radius-md);
+
+    background:var(--glass);
+
+    color:var(--text);
+
+    display:none;
+
+}
+
+.quiz-feedback.show{
+
+    display:block;
+
+    animation:fadeIn .35s;
+
+}
+
+.quiz-feedback strong{
+
+    color:var(--color-primary);
+
+}
+
+/*=========================================================
+ PROGRESSO
+=========================================================*/
+
+.quiz-progress{
+
+    margin-top:35px;
+
+}
+
+.quiz-progress-track{
+
+    height:14px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+}
+
+.quiz-progress-fill{
+
+    width:0;
+
+    height:100%;
+
+    border-radius:999px;
+
+    background:var(--xp-bar);
+
+    transition:width .45s ease;
+
+}
+
+/*=========================================================
+ TIMER
+=========================================================*/
+
+.quiz-timer{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.quiz-timer-label{
+
+    color:var(--text-muted);
+
+}
+
+.quiz-time{
+
+    font-family:var(--font-code);
+
+    color:var(--color-warning);
+
+    font-weight:700;
+
+}
+
+.quiz-time.low{
+
+    color:var(--color-danger);
+
+    animation:pulse .8s infinite;
+
+}
+
+/*=========================================================
+ RESULTADO
+=========================================================*/
+
+.quiz-result{
+
+    text-align:center;
+
+}
+
+.quiz-result h2{
+
+    font-size:2.2rem;
+
+    color:var(--color-primary);
+
+    margin-bottom:15px;
+
+}
+
+.quiz-medal{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+}
+
+.quiz-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin:35px 0;
+
+}
+
+.quiz-stat{
+
+    background:var(--bg-panel);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-md);
+
+    padding:20px;
+
+}
+
+.quiz-stat-value{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:var(--color-primary);
+
+}
+
+.quiz-stat-label{
+
+    color:var(--text-muted);
+
+    margin-top:6px;
+
+}
+
+/*=========================================================
+ BOTÕES
+=========================================================*/
+
+.quiz-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+
+}
+
+/*=========================================================
+ XP
+=========================================================*/
+
+.quiz-xp{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(0,255,157,.15);
+
+    color:var(--xp-color);
+
+    font-weight:700;
+
+}
+
+/*=========================================================
+ COMBO
+=========================================================*/
+
+.quiz-combo{
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    padding:12px 20px;
+
+    border-radius:999px;
+
+    background:var(--gradient-success);
+
+    color:#00150d;
+
+    font-weight:700;
+
+    animation:slideDown .4s;
+
+    z-index:var(--z-toast);
+
+}
+
+/*=========================================================
+ RESPONSIVO
+=========================================================*/
+
+@media(max-width:768px){
+
+.quiz-question{
+
+    font-size:1.25rem;
+
+}
+
+.quiz-option{
+
+    padding:15px;
+
+}
+
+.quiz-letter{
+
+    width:38px;
+
+    height:38px;
+
+}
+
+.quiz-stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.quiz-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.quiz-option{
+
+    gap:12px;
+
+}
+
+.quiz-text{
+
+    font-size:.95rem;
+
+}
+
+.quiz-result h2{
+
+    font-size:1.7rem;
+
+}
+
+.quiz-medal{
+
+    font-size:3rem;
+
+}
+
+}

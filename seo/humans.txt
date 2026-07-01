@@ -1,0 +1,30 @@
+/* TEAM */
+
+Project:
+Java no IBM Z Simulator
+
+Author:
+Vagner Bellacosa
+
+Website:
+https://SEU-DOMINIO.com
+
+Brand:
+Bellacosa Mainframe
+
+Role:
+IBM Mainframe Instructor
+
+Technology:
+HTML5
+CSS3
+JavaScript
+IBM Z
+COBOL
+Java
+Db2
+CICS
+
+Thanks:
+IBM Z Community
+Open Source Community

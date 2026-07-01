@@ -1,1 +1,284 @@
-{}
+{
+  "version": "1.0",
+  "title": "Arquitetura Java no IBM Z",
+  "language": "pt-BR",
+
+  "layers":[
+
+    {
+      "id":"user",
+      "order":1,
+      "title":"Usuário",
+      "icon":"👨‍💻",
+      "color":"#00D9FF",
+      "description":"O desenvolvedor ou usuário inicia a aplicação.",
+      "components":[
+        {
+          "id":"browser",
+          "name":"Browser / App",
+          "type":"client"
+        }
+      ]
+    },
+
+    {
+      "id":"api",
+      "order":2,
+      "title":"Camada de APIs",
+      "icon":"🌐",
+      "color":"#00FF9D",
+      "description":"Recebe requisições REST e encaminha para os serviços Java.",
+      "components":[
+        {
+          "id":"rest",
+          "name":"REST API"
+        },
+        {
+          "id":"graphql",
+          "name":"GraphQL"
+        },
+        {
+          "id":"zosconnect",
+          "name":"z/OS Connect"
+        }
+      ]
+    },
+
+    {
+      "id":"java",
+      "order":3,
+      "title":"Aplicação Java",
+      "icon":"☕",
+      "color":"#FFB300",
+      "description":"Onde ficam classes, objetos, regras de negócio e serviços.",
+      "components":[
+        {
+          "id":"controller",
+          "name":"Controller"
+        },
+        {
+          "id":"service",
+          "name":"Service"
+        },
+        {
+          "id":"repository",
+          "name":"Repository"
+        },
+        {
+          "id":"domain",
+          "name":"Domain Model"
+        }
+      ]
+    },
+
+    {
+      "id":"jvm",
+      "order":4,
+      "title":"Java Virtual Machine",
+      "icon":"⚙",
+      "color":"#64B5F6",
+      "description":"Executa o bytecode Java otimizado para IBM Z.",
+      "components":[
+        {
+          "id":"jit",
+          "name":"JIT Compiler"
+        },
+        {
+          "id":"gc",
+          "name":"Garbage Collector"
+        },
+        {
+          "id":"threads",
+          "name":"Thread Manager"
+        }
+      ]
+    },
+
+    {
+      "id":"middleware",
+      "order":5,
+      "title":"Middleware IBM",
+      "icon":"🔄",
+      "color":"#7E57C2",
+      "description":"Serviços corporativos utilizados pela aplicação.",
+      "components":[
+        {
+          "id":"cics",
+          "name":"CICS"
+        },
+        {
+          "id":"mq",
+          "name":"IBM MQ"
+        },
+        {
+          "id":"was",
+          "name":"WebSphere Liberty"
+        }
+      ]
+    },
+
+    {
+      "id":"legacy",
+      "order":6,
+      "title":"Aplicações Legadas",
+      "icon":"🖥",
+      "color":"#26A69A",
+      "description":"Programas COBOL e PL/I existentes.",
+      "components":[
+        {
+          "id":"cobol",
+          "name":"Enterprise COBOL"
+        },
+        {
+          "id":"pli",
+          "name":"PL/I"
+        }
+      ]
+    },
+
+    {
+      "id":"database",
+      "order":7,
+      "title":"Dados",
+      "icon":"💾",
+      "color":"#EF5350",
+      "description":"Persistência das informações corporativas.",
+      "components":[
+        {
+          "id":"db2",
+          "name":"Db2"
+        },
+        {
+          "id":"vsam",
+          "name":"VSAM"
+        },
+        {
+          "id":"ims",
+          "name":"IMS DB"
+        }
+      ]
+    },
+
+    {
+      "id":"platform",
+      "order":8,
+      "title":"IBM Z",
+      "icon":"🛡",
+      "color":"#90CAF9",
+      "description":"Infraestrutura física onde tudo é executado.",
+      "components":[
+        {
+          "id":"zos",
+          "name":"z/OS"
+        },
+        {
+          "id":"cpu",
+          "name":"IBM Telum"
+        },
+        {
+          "id":"storage",
+          "name":"DASD"
+        }
+      ]
+    }
+
+  ],
+
+  "connections":[
+
+    {
+      "from":"browser",
+      "to":"rest",
+      "label":"HTTPS"
+    },
+
+    {
+      "from":"rest",
+      "to":"controller",
+      "label":"REST"
+    },
+
+    {
+      "from":"controller",
+      "to":"service",
+      "label":"Business"
+    },
+
+    {
+      "from":"service",
+      "to":"repository",
+      "label":"Repository"
+    },
+
+    {
+      "from":"repository",
+      "to":"db2",
+      "label":"JDBC"
+    },
+
+    {
+      "from":"service",
+      "to":"cics",
+      "label":"ECI"
+
+    },
+
+    {
+      "from":"cics",
+      "to":"cobol",
+      "label":"LINK"
+
+    },
+
+    {
+      "from":"service",
+      "to":"mq",
+      "label":"MQ"
+
+    },
+
+    {
+      "from":"service",
+      "to":"zosconnect",
+      "label":"API"
+
+    },
+
+    {
+      "from":"jvm",
+      "to":"zos",
+      "label":"Execução"
+
+    }
+
+  ],
+
+  "legend":[
+
+    {
+      "icon":"☕",
+      "meaning":"Java"
+    },
+
+    {
+      "icon":"🖥",
+      "meaning":"COBOL"
+    },
+
+    {
+      "icon":"💾",
+      "meaning":"Banco de Dados"
+    },
+
+    {
+      "icon":"⚙",
+      "meaning":"JVM"
+    },
+
+    {
+      "icon":"🛡",
+      "meaning":"IBM Z"
+    }
+
+  ]
+}

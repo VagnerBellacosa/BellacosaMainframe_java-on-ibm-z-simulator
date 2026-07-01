@@ -1,1 +1,149 @@
-{}
+{
+  "title": "Java no IBM Z",
+  "version": "1.0",
+  "language": "pt-BR",
+  "passingScore": 70,
+  "xpPerQuestion": 100,
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": "easy",
+      "category": "Fundamentos",
+      "question": "Em Java, qual estrutura corresponde ao PROGRAM-ID do COBOL?",
+      "options": [
+        "class",
+        "method",
+        "package",
+        "interface"
+      ],
+      "answer": 0,
+      "explanation": "Assim como PROGRAM-ID identifica um programa COBOL, a class define a unidade principal em Java."
+    },
+    {
+      "id": 2,
+      "difficulty": "easy",
+      "category": "Fundamentos",
+      "question": "Qual método é normalmente o ponto de entrada de uma aplicação Java?",
+      "options": [
+        "run()",
+        "main()",
+        "start()",
+        "execute()"
+      ],
+      "answer": 1,
+      "explanation": "O método public static void main(String[] args) é equivalente ao início da execução do programa."
+    },
+    {
+      "id": 3,
+      "difficulty": "easy",
+      "category": "Variáveis",
+      "question": "Working-Storage em COBOL corresponde mais diretamente a:",
+      "options": [
+        "Variáveis da classe",
+        "Comentários",
+        "Pacotes",
+        "Interfaces"
+      ],
+      "answer": 0,
+      "explanation": "Variáveis declaradas na classe podem permanecer disponíveis durante sua existência."
+    },
+    {
+      "id": 4,
+      "difficulty": "medium",
+      "category": "Métodos",
+      "question": "PERFORM em COBOL lembra qual recurso em Java?",
+      "options": [
+        "Loop infinito",
+        "Métodos",
+        "Imports",
+        "Annotations"
+      ],
+      "answer": 1,
+      "explanation": "Métodos encapsulam lógica reutilizável, semelhante aos parágrafos executados por PERFORM."
+    },
+    {
+      "id": 5,
+      "difficulty": "medium",
+      "category": "Orientação a Objetos",
+      "question": "O que uma classe representa?",
+      "options": [
+        "Um objeto já criado",
+        "Um modelo para criar objetos",
+        "Uma variável",
+        "Um banco de dados"
+      ],
+      "answer": 1,
+      "explanation": "Uma classe é um molde. Objetos são instâncias desse molde."
+    },
+    {
+      "id": 6,
+      "difficulty": "medium",
+      "category": "IBM Z",
+      "question": "Java pode executar diretamente no IBM Z?",
+      "options": [
+        "Não",
+        "Sim, utilizando a JVM para IBM Z",
+        "Somente Linux",
+        "Somente Windows"
+      ],
+      "answer": 1,
+      "explanation": "O IBM Z possui JVM otimizada para executar aplicações Java."
+    },
+    {
+      "id": 7,
+      "difficulty": "medium",
+      "category": "Integração",
+      "question": "Java pode acessar programas COBOL?",
+      "options": [
+        "Nunca",
+        "Sim, por APIs, CICS, MQ e outros mecanismos",
+        "Somente via FTP",
+        "Somente convertendo o código"
+      ],
+      "answer": 1,
+      "explanation": "A integração entre Java e COBOL é muito comum em ambientes IBM Z."
+    },
+    {
+      "id": 8,
+      "difficulty": "hard",
+      "category": "JVM",
+      "question": "Quem executa o bytecode Java?",
+      "options": [
+        "Compilador COBOL",
+        "JVM",
+        "JCL",
+        "TSO"
+      ],
+      "answer": 1,
+      "explanation": "Após a compilação, o bytecode é executado pela Java Virtual Machine."
+    },
+    {
+      "id": 9,
+      "difficulty": "hard",
+      "category": "Objetos",
+      "question": "Como criar um objeto em Java?",
+      "options": [
+        "ALLOCATE",
+        "CREATE",
+        "new",
+        "INITIALIZE"
+      ],
+      "answer": 2,
+      "explanation": "A palavra-chave new cria uma instância de uma classe."
+    },
+    {
+      "id": 10,
+      "difficulty": "hard",
+      "category": "Modernização",
+      "question": "Qual é uma vantagem de utilizar Java no IBM Z?",
+      "options": [
+        "Substituir todo COBOL obrigatoriamente",
+        "Executar aplicações modernas próximas aos dados",
+        "Eliminar o Db2",
+        "Dispensar o z/OS"
+      ],
+      "answer": 1,
+      "explanation": "Java permite desenvolver aplicações modernas sem mover os dados para outra plataforma."
+    }
+  ]
+}

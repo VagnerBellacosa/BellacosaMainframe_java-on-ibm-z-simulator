@@ -1,0 +1,28 @@
+```txt
+# =========================================================
+# Bellacosa Mainframe
+# Java no IBM Z Simulator
+# robots.txt
+# =========================================================
+
+User-agent: *
+Allow: /
+
+# Bloqueia arquivos internos (caso existam)
+Disallow: /assets/private/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /logs/
+
+# Permite CSS, JS e imagens
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /seo/
+
+# Sitemap
+Sitemap: https://SEU-DOMINIO.com/sitemap.xml
+
+# Host (opcional)
+Host: https://SEU-DOMINIO.com
+```

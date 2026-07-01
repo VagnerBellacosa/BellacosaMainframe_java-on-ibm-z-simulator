@@ -1,1 +1,291 @@
-{}
+{
+  "version": "1.0",
+  "title": "Java no IBM Z - Flash Cards",
+  "language": "pt-BR",
+
+  "cards": [
+
+    {
+      "id": 1,
+      "category": "Fundamentos",
+      "icon": "☕",
+      "front": {
+        "title": "PROGRAM-ID",
+        "subtitle": "COBOL"
+      },
+      "back": {
+        "title": "class",
+        "description": "A classe é a unidade principal do Java, equivalente ao PROGRAM-ID em COBOL."
+      },
+      "xp": 20
+    },
+
+    {
+      "id": 2,
+      "category": "Fundamentos",
+      "icon": "⚙",
+      "front": {
+        "title": "PERFORM",
+        "subtitle": "COBOL"
+      },
+      "back": {
+        "title": "Method",
+        "description": "Métodos encapsulam comportamentos, assim como PERFORM executa um parágrafo."
+      },
+      "xp": 20
+    },
+
+    {
+      "id": 3,
+      "category": "Memória",
+      "icon": "🧠",
+      "front": {
+        "title": "Working-Storage"
+      },
+      "back": {
+        "title": "Atributos da Classe",
+        "description": "Variáveis compartilhadas entre os métodos de uma instância."
+      },
+      "xp": 20
+    },
+
+    {
+      "id": 4,
+      "category": "Memória",
+      "icon": "📦",
+      "front": {
+        "title": "Local-Storage"
+      },
+      "back": {
+        "title": "Variáveis Locais",
+        "description": "Existem apenas durante a execução do método."
+      },
+      "xp": 20
+    },
+
+    {
+      "id": 5,
+      "category": "Objetos",
+      "icon": "🧩",
+      "front": {
+        "title": "Classe"
+      },
+      "back": {
+        "title": "Molde",
+        "description": "Uma classe define como um objeto será criado."
+      },
+      "xp": 25
+    },
+
+    {
+      "id": 6,
+      "category": "Objetos",
+      "icon": "🚀",
+      "front": {
+        "title": "Objeto"
+      },
+      "back": {
+        "title": "Instância",
+        "description": "Um objeto é criado utilizando a palavra-chave new."
+      },
+      "xp": 25
+    },
+
+    {
+      "id": 7,
+      "category": "Execução",
+      "icon": "⚡",
+      "front": {
+        "title": ".java"
+      },
+      "back": {
+        "title": "Código Fonte",
+        "description": "Arquivo contendo o código Java."
+      },
+      "xp": 25
+    },
+
+    {
+      "id": 8,
+      "category": "Execução",
+      "icon": "📄",
+      "front": {
+        "title": ".class"
+      },
+      "back": {
+        "title": "Bytecode",
+        "description": "Resultado da compilação Java executado pela JVM."
+      },
+      "xp": 25
+    },
+
+    {
+      "id": 9,
+      "category": "JVM",
+      "icon": "☕",
+      "front": {
+        "title": "Compilador"
+      },
+      "back": {
+        "title": "javac",
+        "description": "Transforma código Java em bytecode."
+      },
+      "xp": 30
+    },
+
+    {
+      "id": 10,
+      "category": "JVM",
+      "icon": "⚙",
+      "front": {
+        "title": "Executor"
+      },
+      "back": {
+        "title": "JVM",
+        "description": "Executa o bytecode em qualquer plataforma suportada."
+      },
+      "xp": 30
+    },
+
+    {
+      "id": 11,
+      "category": "IBM Z",
+      "icon": "🛡",
+      "front": {
+        "title": "z/OS"
+      },
+      "back": {
+        "title": "Sistema Operacional",
+        "description": "Executa aplicações COBOL, Java, CICS, Db2 e MQ."
+      },
+      "xp": 40
+    },
+
+    {
+      "id": 12,
+      "category": "IBM Z",
+      "icon": "💾",
+      "front": {
+        "title": "Db2"
+      },
+      "back": {
+        "title": "Banco de Dados",
+        "description": "Pode ser acessado tanto por COBOL quanto por Java."
+      },
+      "xp": 40
+    },
+
+    {
+      "id": 13,
+      "category": "Integração",
+      "icon": "🔄",
+      "front": {
+        "title": "CICS"
+      },
+      "back": {
+        "title": "Transações",
+        "description": "Java e COBOL podem compartilhar transações CICS."
+      },
+      "xp": 40
+    },
+
+    {
+      "id": 14,
+      "category": "Integração",
+      "icon": "📨",
+      "front": {
+        "title": "IBM MQ"
+      },
+      "back": {
+        "title": "Mensageria",
+        "description": "Permite comunicação assíncrona entre aplicações."
+      },
+      "xp": 40
+    },
+
+    {
+      "id": 15,
+      "category": "Modernização",
+      "icon": "🌐",
+      "front": {
+        "title": "API"
+      },
+      "back": {
+        "title": "REST",
+        "description": "Java expõe serviços REST consumidos por aplicações modernas."
+      },
+      "xp": 50
+    },
+
+    {
+      "id": 16,
+      "category": "Modernização",
+      "icon": "🔗",
+      "front": {
+        "title": "z/OS Connect"
+      },
+      "back": {
+        "title": "APIs Mainframe",
+        "description": "Expõe programas COBOL como APIs REST."
+      },
+      "xp": 50
+    },
+
+    {
+      "id": 17,
+      "category": "POO",
+      "icon": "🧬",
+      "front": {
+        "title": "Herança"
+      },
+      "back": {
+        "title": "extends",
+        "description": "Uma classe reutiliza outra."
+      },
+      "xp": 60
+    },
+
+    {
+      "id": 18,
+      "category": "POO",
+      "icon": "🎭",
+      "front": {
+        "title": "Polimorfismo"
+      },
+      "back": {
+        "title": "Mesmo método",
+        "description": "Objetos diferentes respondem ao mesmo método."
+      },
+      "xp": 60
+    },
+
+    {
+      "id": 19,
+      "category": "POO",
+      "icon": "🔒",
+      "front": {
+        "title": "Encapsulamento"
+      },
+      "back": {
+        "title": "private",
+        "description": "Protege os dados internos da classe."
+      },
+      "xp": 60
+    },
+
+    {
+      "id": 20,
+      "category": "Final",
+      "icon": "🏆",
+      "front": {
+        "title": "Missão Completa"
+      },
+      "back": {
+        "title": "Java Padawan",
+        "description": "Você está pronto para explorar Java dentro do IBM Z."
+      },
+      "xp": 100
+    }
+
+  ]
+}

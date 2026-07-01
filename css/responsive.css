@@ -1,0 +1,662 @@
+/*=========================================================
+ Bellacosa Mainframe
+ Java no IBM Z
+ responsive.css
+=========================================================*/
+
+/*=========================================================
+ 1600px+
+=========================================================*/
+
+@media (min-width:1600px){
+
+.container,
+main{
+
+    max-width:1500px;
+
+}
+
+.hero h1{
+
+    font-size:5.5rem;
+
+}
+
+.hero h2{
+
+    font-size:2.4rem;
+
+}
+
+.section{
+
+    padding:70px;
+
+}
+
+}
+
+/*=========================================================
+ 1400px
+=========================================================*/
+
+@media (max-width:1400px){
+
+.grid-4{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+/*=========================================================
+ 1200px
+=========================================================*/
+
+@media (max-width:1200px){
+
+.container,
+main{
+
+    width:95%;
+
+}
+
+.hero{
+
+    min-height:80vh;
+
+}
+
+.section{
+
+    padding:45px;
+
+}
+
+.stats-card{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/*=========================================================
+ NOTEBOOK
+=========================================================*/
+
+@media (max-width:992px){
+
+.grid-4,
+.grid-3{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.grid-2{
+
+    grid-template-columns:1fr;
+
+}
+
+.hero{
+
+    text-align:center;
+
+    padding:100px 25px;
+
+}
+
+.hero-content{
+
+    margin:auto;
+
+}
+
+.flex-between{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.dragdrop{
+
+    grid-template-columns:1fr;
+
+}
+
+.timeline::before,
+
+.timeline-progress{
+
+    left:30px;
+
+}
+
+.timeline-item{
+
+    width:100%;
+
+    left:0 !important;
+
+    text-align:left;
+
+    padding-left:75px;
+
+    padding-right:15px;
+
+}
+
+.timeline-dot{
+
+    left:20px !important;
+
+    right:auto !important;
+
+}
+
+.timeline-content::before,
+
+.timeline-content::after{
+
+    display:none;
+
+}
+
+}
+
+/*=========================================================
+ TABLET
+=========================================================*/
+
+@media (max-width:768px){
+
+html{
+
+    font-size:15px;
+
+}
+
+.container,
+main{
+
+    width:96%;
+
+}
+
+.hero{
+
+    min-height:auto;
+
+    padding:90px 20px 70px;
+
+}
+
+.hero h1{
+
+    font-size:2.8rem;
+
+}
+
+.hero h2{
+
+    font-size:1.5rem;
+
+}
+
+.hero p{
+
+    font-size:1rem;
+
+}
+
+.section{
+
+    padding:30px 20px;
+
+}
+
+.section-title h2{
+
+    font-size:1.8rem;
+
+}
+
+.card{
+
+    padding:22px;
+
+}
+
+.card-header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.stats-card{
+
+    grid-template-columns:1fr;
+
+}
+
+.quiz-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.quiz-question{
+
+    font-size:1.2rem;
+
+}
+
+.quiz-option{
+
+    padding:14px;
+
+}
+
+.quiz-stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.progress-steps{
+
+    flex-direction:column;
+
+}
+
+.progress-step::after{
+
+    display:none;
+
+}
+
+.modal{
+
+    width:100%;
+
+    max-height:95vh;
+
+}
+
+.modal-header,
+
+.modal-body,
+
+.modal-footer{
+
+    padding:18px;
+
+}
+
+.toast-container{
+
+    left:15px;
+
+    right:15px;
+
+}
+
+.toast{
+
+    width:100%;
+
+    min-width:auto;
+
+}
+
+.btn{
+
+    width:100%;
+
+}
+
+.btn-group{
+
+    flex-direction:column;
+
+}
+
+}
+
+/*=========================================================
+ SMARTPHONE
+=========================================================*/
+
+@media (max-width:576px){
+
+html{
+
+    font-size:14px;
+
+}
+
+.grid-2,
+.grid-3,
+.grid-4{
+
+    grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+    font-size:2.2rem;
+
+}
+
+.hero h2{
+
+    font-size:1.3rem;
+
+}
+
+.section-title h2{
+
+    font-size:1.5rem;
+
+}
+
+.card{
+
+    padding:18px;
+
+}
+
+.card-title{
+
+    font-size:1.15rem;
+
+}
+
+.card-icon{
+
+    width:48px;
+
+    height:48px;
+
+    font-size:1.2rem;
+
+}
+
+.quiz-option{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+}
+
+.quiz-letter{
+
+    width:36px;
+
+    height:36px;
+
+}
+
+.quiz-actions{
+
+    flex-direction:column;
+
+}
+
+.drag-card{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.drag-match{
+
+    flex-direction:column;
+
+}
+
+.drag-target{
+
+    width:100%;
+
+}
+
+.progress-circle{
+
+    width:120px;
+
+    height:120px;
+
+}
+
+.progress-circle svg{
+
+    width:120px;
+
+    height:120px;
+
+}
+
+.progress-circle-value{
+
+    font-size:1.5rem;
+
+}
+
+.timeline-item{
+
+    padding-left:60px;
+
+}
+
+.timeline-dot{
+
+    width:18px;
+
+    height:18px;
+
+    left:22px !important;
+
+}
+
+.timeline-content{
+
+    padding:18px;
+
+}
+
+footer{
+
+    padding:35px 15px;
+
+}
+
+}
+
+/*=========================================================
+ TELAS MUITO PEQUENAS
+=========================================================*/
+
+@media (max-width:360px){
+
+html{
+
+    font-size:13px;
+
+}
+
+.hero h1{
+
+    font-size:1.9rem;
+
+}
+
+.hero h2{
+
+    font-size:1.15rem;
+
+}
+
+.card{
+
+    padding:15px;
+
+}
+
+.section{
+
+    padding:18px 15px;
+
+}
+
+.btn{
+
+    padding:12px 18px;
+
+    font-size:.9rem;
+
+}
+
+.modal-title{
+
+    font-size:1.1rem;
+
+}
+
+}
+
+/*=========================================================
+ LANDSCAPE
+=========================================================*/
+
+@media (max-height:550px) and (orientation:landscape){
+
+.hero{
+
+    min-height:auto;
+
+    padding:40px 20px;
+
+}
+
+.modal{
+
+    max-height:88vh;
+
+}
+
+}
+
+/*=========================================================
+ IMPRESSÃO
+=========================================================*/
+
+@media print{
+
+body{
+
+    background:#fff;
+
+    color:#000;
+
+}
+
+header,
+footer,
+.btn,
+.toast-container,
+.modal-overlay,
+#particlesCanvas,
+#confettiCanvas{
+
+    display:none !important;
+
+}
+
+.section,
+.card{
+
+    border:1px solid #ccc;
+
+    box-shadow:none;
+
+    break-inside:avoid;
+
+}
+
+a{
+
+    color:#000;
+
+    text-decoration:none;
+
+}
+
+}
+
+/*=========================================================
+ ACESSIBILIDADE
+=========================================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+*,
+*::before,
+*::after{
+
+    animation:none !important;
+
+    transition:none !important;
+
+    scroll-behavior:auto !important;
+
+}
+
+}
+
+@media (prefers-contrast:more){
+
+.card,
+.section,
+.modal{
+
+    border-width:2px;
+
+}
+
+.btn{
+
+    border:2px solid currentColor;
+
+}
+
+}
+
+@media (prefers-color-scheme:dark){
+
+body{
+
+    color-scheme:dark;
+
+}
+
+}

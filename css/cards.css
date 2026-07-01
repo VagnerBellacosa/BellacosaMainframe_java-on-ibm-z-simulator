@@ -1,0 +1,635 @@
+/*=========================================================
+ Bellacosa Mainframe
+ Java no IBM Z
+ cards.css
+=========================================================*/
+
+/*=========================================================
+ CARD BASE
+=========================================================*/
+
+.card{
+
+    position:relative;
+
+    background:var(--bg-panel);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-lg);
+
+    padding:28px;
+
+    overflow:hidden;
+
+    transition:all .30s ease;
+
+    box-shadow:var(--shadow);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--color-primary);
+
+    box-shadow:var(--shadow-glow);
+
+}
+
+/*=========================================================
+ GLASS CARD
+=========================================================*/
+
+.glass-card{
+
+    background:var(--glass);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+}
+
+/*=========================================================
+ HOVER LIGHT
+=========================================================*/
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            rgba(255,255,255,.10),
+
+            transparent 45%
+
+        );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.card:hover::before{
+
+    opacity:1;
+
+}
+
+/*=========================================================
+ HEADER
+=========================================================*/
+
+.card-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:18px;
+
+}
+
+.card-icon{
+
+    width:56px;
+
+    height:56px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--gradient-primary);
+
+    font-size:1.6rem;
+
+}
+
+.card-title{
+
+    font-size:1.4rem;
+
+    font-weight:700;
+
+    color:var(--color-primary);
+
+}
+
+.card-subtitle{
+
+    color:var(--text-muted);
+
+    font-size:.95rem;
+
+    margin-top:4px;
+
+}
+
+/*=========================================================
+ BODY
+=========================================================*/
+
+.card-body{
+
+    color:var(--text);
+
+    line-height:1.7;
+
+}
+
+/*=========================================================
+ FOOTER
+=========================================================*/
+
+.card-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:24px;
+
+}
+
+/*=========================================================
+ FEATURE CARD
+=========================================================*/
+
+.feature-card{
+
+    text-align:center;
+
+    padding:40px 30px;
+
+}
+
+.feature-card .card-icon{
+
+    margin:auto auto 20px;
+
+}
+
+/*=========================================================
+ QUIZ CARD
+=========================================================*/
+
+.quiz-card{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.quiz-question{
+
+    font-size:1.4rem;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.quiz-options{
+
+    display:grid;
+
+    gap:16px;
+
+}
+
+.quiz-option{
+
+    padding:18px;
+
+    border-radius:var(--radius-md);
+
+    border:1px solid var(--border);
+
+    background:var(--bg-panel-2);
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.quiz-option:hover{
+
+    border-color:var(--color-primary);
+
+    transform:translateX(8px);
+
+}
+
+.quiz-option.correct{
+
+    background:rgba(0,255,157,.18);
+
+    border-color:var(--quiz-correct);
+
+}
+
+.quiz-option.wrong{
+
+    background:rgba(255,91,107,.18);
+
+    border-color:var(--quiz-wrong);
+
+}
+
+/*=========================================================
+ FLIP CARD
+=========================================================*/
+
+.flip-card{
+
+    perspective:1200px;
+
+}
+
+.flip-card-inner{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+    transition:transform .8s;
+
+    transform-style:preserve-3d;
+
+}
+
+.flip-card.flipped .flip-card-inner{
+
+    transform:rotateY(180deg);
+
+}
+
+.flip-front,
+
+.flip-back{
+
+    position:absolute;
+
+    inset:0;
+
+    backface-visibility:hidden;
+
+    border-radius:var(--radius-lg);
+
+    overflow:hidden;
+
+}
+
+.flip-front{
+
+    background:var(--bg-panel);
+
+}
+
+.flip-back{
+
+    background:var(--gradient-panel);
+
+    transform:rotateY(180deg);
+
+}
+
+/*=========================================================
+ TERMINAL
+=========================================================*/
+
+.terminal-card{
+
+    background:var(--terminal-bg);
+
+    color:var(--terminal-green);
+
+    border:1px solid var(--terminal-border);
+
+    font-family:var(--font-code);
+
+}
+
+.terminal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:20px;
+
+    color:#7dffb8;
+
+}
+
+/*=========================================================
+ XP CARD
+=========================================================*/
+
+.xp-card{
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            rgba(0,255,157,.15),
+
+            rgba(0,217,255,.15)
+
+        );
+
+}
+
+.xp-value{
+
+    font-size:2.5rem;
+
+    font-weight:700;
+
+    color:var(--xp-color);
+
+}
+
+/*=========================================================
+ BOSS CARD
+=========================================================*/
+
+.boss-card{
+
+    border:2px solid var(--boss-life);
+
+    box-shadow:var(--boss-glow);
+
+}
+
+.boss-title{
+
+    color:var(--boss-life);
+
+    font-size:2rem;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+/*=========================================================
+ ACHIEVEMENT
+=========================================================*/
+
+.achievement{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px;
+
+    border-radius:var(--radius-md);
+
+    border:1px solid var(--border);
+
+    margin-bottom:15px;
+
+    transition:.25s;
+
+}
+
+.achievement.unlocked{
+
+    border-color:var(--color-success);
+
+    background:rgba(0,255,157,.10);
+
+}
+
+.achievement.locked{
+
+    opacity:.55;
+
+}
+
+.achievement-icon{
+
+    width:54px;
+
+    height:54px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:var(--gradient-primary);
+
+    font-size:1.4rem;
+
+}
+
+/*=========================================================
+ LAB CARD
+=========================================================*/
+
+.lab-card{
+
+    border-left:6px solid var(--color-primary);
+
+}
+
+.lab-level{
+
+    display:inline-block;
+
+    padding:5px 10px;
+
+    border-radius:20px;
+
+    background:var(--gradient-primary);
+
+    color:#001722;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+/*=========================================================
+ TIMELINE CARD
+=========================================================*/
+
+.timeline-card{
+
+    position:relative;
+
+    padding-left:35px;
+
+}
+
+.timeline-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:8px;
+
+    top:0;
+
+    bottom:0;
+
+    width:2px;
+
+    background:var(--timeline-line);
+
+}
+
+.timeline-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:18px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:var(--timeline-dot);
+
+    box-shadow:0 0 12px var(--timeline-dot);
+
+}
+
+/*=========================================================
+ STATS
+=========================================================*/
+
+.stats-card{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    text-align:center;
+
+}
+
+.stat-number{
+
+    font-size:2rem;
+
+    color:var(--color-primary);
+
+    font-weight:700;
+
+}
+
+.stat-label{
+
+    color:var(--text-muted);
+
+    font-size:.9rem;
+
+}
+
+/*=========================================================
+ BADGE
+=========================================================*/
+
+.card-badge{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    background:var(--gradient-success);
+
+    color:#00150D;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+}
+
+/*=========================================================
+ RESPONSIVO
+=========================================================*/
+
+@media(max-width:768px){
+
+.stats-card{
+
+    grid-template-columns:1fr;
+
+}
+
+.card{
+
+    padding:22px;
+
+}
+
+.card-title{
+
+    font-size:1.2rem;
+
+}
+
+.quiz-question{
+
+    font-size:1.15rem;
+
+}
+
+}

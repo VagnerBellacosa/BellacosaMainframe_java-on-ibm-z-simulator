@@ -1,1 +1,217 @@
-{}
+{
+  "version": "1.0",
+  "title": "Glossário Java para IBM Mainframe",
+  "language": "pt-BR",
+  "entries": [
+    {
+      "term": "Class",
+      "category": "Java",
+      "definition": "Modelo que define atributos e comportamentos de um objeto.",
+      "cobolEquivalent": "PROGRAM-ID",
+      "example": "public class Cliente {}"
+    },
+    {
+      "term": "Object",
+      "category": "Java",
+      "definition": "Instância criada a partir de uma classe.",
+      "cobolEquivalent": "Instância lógica de um programa",
+      "example": "Cliente cli = new Cliente();"
+    },
+    {
+      "term": "Method",
+      "category": "Java",
+      "definition": "Bloco de código reutilizável pertencente a uma classe.",
+      "cobolEquivalent": "PERFORM de um parágrafo",
+      "example": "cliente.calcularSaldo();"
+    },
+    {
+      "term": "Package",
+      "category": "Java",
+      "definition": "Agrupa classes relacionadas.",
+      "cobolEquivalent": "Biblioteca de programas",
+      "example": "package br.com.bellacosa;"
+    },
+    {
+      "term": "JVM",
+      "category": "Java",
+      "definition": "Máquina Virtual responsável por executar bytecode.",
+      "cobolEquivalent": "Ambiente de execução",
+      "example": "IBM Semeru Runtime"
+    },
+    {
+      "term": "Bytecode",
+      "category": "Java",
+      "definition": "Código intermediário gerado pelo compilador Java.",
+      "cobolEquivalent": "Load Module",
+      "example": "Arquivo .class"
+    },
+    {
+      "term": "Garbage Collector",
+      "category": "Java",
+      "definition": "Gerencia automaticamente a memória.",
+      "cobolEquivalent": "Sem equivalente direto",
+      "example": "Liberação automática de objetos."
+    },
+    {
+      "term": "new",
+      "category": "Java",
+      "definition": "Cria uma nova instância de uma classe.",
+      "cobolEquivalent": "ALLOCATE",
+      "example": "new Conta()"
+    },
+    {
+      "term": "Constructor",
+      "category": "Java",
+      "definition": "Método especial executado na criação do objeto.",
+      "cobolEquivalent": "INITIALIZE",
+      "example": "public Conta(){}"
+    },
+    {
+      "term": "Interface",
+      "category": "Java",
+      "definition": "Contrato que define métodos obrigatórios.",
+      "cobolEquivalent": "Copybook de especificação",
+      "example": "interface Pagamento"
+    },
+    {
+      "term": "Inheritance",
+      "category": "POO",
+      "definition": "Permite reutilizar comportamento de outra classe.",
+      "cobolEquivalent": "Sem equivalente direto",
+      "example": "extends Pessoa"
+    },
+    {
+      "term": "Encapsulation",
+      "category": "POO",
+      "definition": "Protege os dados internos de uma classe.",
+      "cobolEquivalent": "Controle de acesso aos dados",
+      "example": "private String nome;"
+    },
+    {
+      "term": "Polymorphism",
+      "category": "POO",
+      "definition": "Mesmo método pode ter comportamentos diferentes.",
+      "cobolEquivalent": "CALL para programas diferentes",
+      "example": "sobrescrita de métodos"
+    },
+    {
+      "term": "Exception",
+      "category": "Java",
+      "definition": "Erro tratado durante a execução.",
+      "cobolEquivalent": "ON SIZE ERROR ou tratamento de ABEND",
+      "example": "try/catch"
+    },
+    {
+      "term": "Thread",
+      "category": "Java",
+      "definition": "Fluxo independente de execução.",
+      "cobolEquivalent": "Task CICS",
+      "example": "Thread.start()"
+    },
+    {
+      "term": "Collection",
+      "category": "Java",
+      "definition": "Estrutura para armazenar objetos.",
+      "cobolEquivalent": "Tabela OCCURS",
+      "example": "ArrayList"
+    },
+    {
+      "term": "ArrayList",
+      "category": "Java",
+      "definition": "Lista dinâmica.",
+      "cobolEquivalent": "OCCURS DEPENDING ON",
+      "example": "new ArrayList<>()"
+    },
+    {
+      "term": "Map",
+      "category": "Java",
+      "definition": "Coleção baseada em chave e valor.",
+      "cobolEquivalent": "Tabela indexada",
+      "example": "HashMap"
+    },
+    {
+      "term": "Annotation",
+      "category": "Java",
+      "definition": "Metadado aplicado ao código.",
+      "cobolEquivalent": "Comentários com função especial",
+      "example": "@Override"
+    },
+    {
+      "term": "Spring Boot",
+      "category": "Framework",
+      "definition": "Framework para aplicações Java.",
+      "cobolEquivalent": "Framework de desenvolvimento",
+      "example": "@SpringBootApplication"
+    },
+    {
+      "term": "JDBC",
+      "category": "Banco de Dados",
+      "definition": "API para acesso a bancos relacionais.",
+      "cobolEquivalent": "EXEC SQL",
+      "example": "Connection conn"
+    },
+    {
+      "term": "Db2",
+      "category": "IBM Z",
+      "definition": "Banco de dados relacional do IBM Z.",
+      "cobolEquivalent": "Mesmo componente utilizado pelo COBOL",
+      "example": "Db2 for z/OS"
+    },
+    {
+      "term": "CICS",
+      "category": "IBM Z",
+      "definition": "Servidor transacional do IBM Z.",
+      "cobolEquivalent": "Ambiente online",
+      "example": "CICS TS"
+    },
+    {
+      "term": "z/OS",
+      "category": "IBM Z",
+      "definition": "Sistema operacional do IBM Mainframe.",
+      "cobolEquivalent": "Ambiente operacional",
+      "example": "IBM z/OS"
+    },
+    {
+      "term": "JCL",
+      "category": "IBM Z",
+      "definition": "Linguagem de controle de jobs.",
+      "cobolEquivalent": "O próprio JCL",
+      "example": "//STEP01 EXEC PGM=..."
+    },
+    {
+      "term": "API",
+      "category": "Integração",
+      "definition": "Interface para comunicação entre aplicações.",
+      "cobolEquivalent": "CALL ou CICS LINK",
+      "example": "REST API"
+    },
+    {
+      "term": "REST",
+      "category": "Integração",
+      "definition": "Arquitetura para serviços HTTP.",
+      "cobolEquivalent": "Interface de comunicação",
+      "example": "GET /clientes"
+    },
+    {
+      "term": "JSON",
+      "category": "Integração",
+      "definition": "Formato de troca de dados.",
+      "cobolEquivalent": "Layout de registro",
+      "example": "{\"nome\":\"João\"}"
+    },
+    {
+      "term": "Maven",
+      "category": "Build",
+      "definition": "Gerenciador de dependências.",
+      "cobolEquivalent": "Procedimento de compilação",
+      "example": "pom.xml"
+    },
+    {
+      "term": "Gradle",
+      "category": "Build",
+      "definition": "Ferramenta moderna de build.",
+      "cobolEquivalent": "Procedimento automatizado",
+      "example": "build.gradle"
+    }
+  ]
+}
