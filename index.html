@@ -583,7 +583,7 @@ document.documentElement.classList.add("loading");
 
 <script type="module">
 
-import analytics from "./js/analytics.js";
+import analytics from "./js/core/analytics.js";
 import i18n from "./lang/i18n.js";
 
 window.analytics=analytics;
@@ -2559,15 +2559,15 @@ navigator.serviceWorker.register(
 <script type="module">
 
 import router from "./js/router.js";
-import analytics from "./js/analytics.js";
+import analytics from "./js/core/analytics.js";
 import i18n from "./lang/i18n.js";
 
-import "./js/config.js";
-import "./js/constants.js";
-import "./js/logger.js";
-import "./js/cache.js";
-import "./js/storage.js";
-import "./js/event-bus.js";
+import "./js/core/config.js";
+import "./js/core/constants.js";
+import "./js/core/logger.js";
+import "./js/core/cache.js";
+import "./js/core/storage.js";
+import "./js/core/event-bus.js";
 import "./js/preload.js";
 
 import "./js/loading.js";
