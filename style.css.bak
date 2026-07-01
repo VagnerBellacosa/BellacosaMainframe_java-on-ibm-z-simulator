@@ -3653,24 +3653,3 @@ footer{
 
 }
 
-.typing-cursor::after{
-
-    content:"▌";
-
-    margin-left:2px;
-
-    color:#00FF66;
-
-    animation:blinkCursor .8s infinite;
-
-}
-
-@keyframes blinkCursor{
-
-    50%{
-
-        opacity:0;
-
-    }
-
-}
