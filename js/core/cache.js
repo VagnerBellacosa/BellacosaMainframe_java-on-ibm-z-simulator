@@ -4,7 +4,7 @@
  cache.js
 =========================================================*/
 
-import CONFIG from "../js/core/config.js";
+import CONFIG from "./config.js";
 
 class Cache {
 

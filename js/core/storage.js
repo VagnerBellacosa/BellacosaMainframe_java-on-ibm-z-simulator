@@ -4,9 +4,9 @@
  storage.js
 =========================================================*/
 
-import { CONFIG, DEFAULT_STATE } from "../js/core/config.js";
-import EventBus from "../js/core/event-bus.js";
-import Content from "../js/core/content.js";
+import { CONFIG, DEFAULT_STATE } from "./config.js";
+import EventBus from "./event-bus.js";
+import Content from "./content.js";
 
 class StorageManager {
 
