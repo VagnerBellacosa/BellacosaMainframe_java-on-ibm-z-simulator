@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 512 512"
+     width="512"
+     height="512">
+
+  <defs>
+
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08131F"/>
+      <stop offset="100%" stop-color="#102A43"/>
+    </linearGradient>
+
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#0088FF"/>
+    </linearGradient>
+
+    <linearGradient id="orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FF6F00"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+  <!-- Background -->
+
+  <rect
+      width="512"
+      height="512"
+      rx="48"
+      fill="url(#bg)"/>
+
+  <!-- IBM Z Frame -->
+
+  <rect
+      x="86"
+      y="82"
+      width="340"
+      height="300"
+      rx="24"
+      fill="#12263A"
+      stroke="url(#blue)"
+      stroke-width="6"/>
+
+  <!-- Screen -->
+
+  <rect
+      x="120"
+      y="116"
+      width="272"
+      height="182"
+      rx="16"
+      fill="#08131F"
+      stroke="#1DD3FF"
+      stroke-width="3"/>
+
+  <!-- Grid -->
+
+  <g opacity=".15">
+
+    <path d="M120 160H392" stroke="#00E5FF"/>
+    <path d="M120 200H392" stroke="#00E5FF"/>
+    <path d="M120 240H392" stroke="#00E5FF"/>
+
+    <path d="M170 116V298" stroke="#00E5FF"/>
+    <path d="M220 116V298" stroke="#00E5FF"/>
+    <path d="M270 116V298" stroke="#00E5FF"/>
+    <path d="M320 116V298" stroke="#00E5FF"/>
+
+  </g>
+
+  <!-- JVM -->
+
+  <g filter="url(#glow)">
+
+    <ellipse
+        cx="256"
+        cy="250"
+        rx="74"
+        ry="10"
+        fill="#00D9FF"/>
+
+    <path
+        d="M245 215
+           C235 190 258 185 252 165
+           C268 175 275 193 264 210
+           C286 220 290 240 270 255
+           C288 248 304 231 299 208
+           C295 188 280 171 260 158"
+        fill="none"
+        stroke="url(#orange)"
+        stroke-width="12"
+        stroke-linecap="round"/>
+
+  </g>
+
+  <!-- JVM -->
+
+  <text
+      x="256"
+      y="285"
+      text-anchor="middle"
+      font-family="Segoe UI,Arial,sans-serif"
+      font-size="34"
+      font-weight="700"
+      fill="#00E5FF">
+
+      JVM
+
+  </text>
+
+  <!-- Java -->
+
+  <text
+      x="256"
+      y="340"
+      text-anchor="middle"
+      font-family="Consolas,monospace"
+      font-size="18"
+      fill="#FFFFFF">
+
+      JAVA ON IBM Z
+
+  </text>
+
+  <!-- Bottom -->
+
+  <rect
+      x="150"
+      y="395"
+      width="212"
+      height="18"
+      rx="8"
+      fill="url(#blue)"/>
+
+  <!-- Decorative LEDs -->
+
+  <circle cx="110" cy="102" r="6" fill="#00E5FF"/>
+  <circle cx="402" cy="102" r="6" fill="#00E5FF"/>
+  <circle cx="110" cy="362" r="6" fill="#00E5FF"/>
+  <circle cx="402" cy="362" r="6" fill="#00E5FF"/>
+
+</svg>

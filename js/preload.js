@@ -5,7 +5,7 @@
 =========================================================*/
 
 import CONFIG from "./core/config.js";
-import Loading from "./core/loading.js";
+import Loading from "./loading.js";
 import EventBus from "./core/event-bus.js";
 import Analytics from "./core/analytics.js";
 

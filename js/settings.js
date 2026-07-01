@@ -4,10 +4,10 @@
  settings.js
 =========================================================*/
 
-import CONFIG from "./config.js";
-import Storage from "./storage.js";
-import EventBus from "./event-bus.js";
-import Analytics from "./analytics.js";
+import CONFIG from "./core/config.js";
+import Storage from "./core/storage.js";
+import EventBus from "./core/event-bus.js";
+import Analytics from "./core/analytics.js";
 import Audio from "./audio.js";
 
 class Settings {

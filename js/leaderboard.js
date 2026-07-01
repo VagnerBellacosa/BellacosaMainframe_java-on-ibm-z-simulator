@@ -4,11 +4,11 @@
  leaderboard.js
 =========================================================*/
 
-import Storage from "./storage.js";
+import Storage from "./core/storage.js";
 import XPManager from "./xp-manager.js";
-import Analytics from "./analytics.js";
-import EventBus from "./event-bus.js";
-import Utils from "./utils.js";
+import Analytics from "./core/analytics.js";
+import EventBus from "./core/event-bus.js";
+import Utils from "./core/utils.js";
 
 class Leaderboard {
 

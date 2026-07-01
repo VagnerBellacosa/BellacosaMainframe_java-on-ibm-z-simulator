@@ -4,14 +4,14 @@
  loading.js
 =========================================================*/
 
-import EventBus from "./event-bus.js";
-import Analytics from "./analytics.js";
+import EventBus from "./core/event-bus.js";
+import Analytics from "./core/analytics.js";
 import Audio from "./audio.js";
-import Utils from "./utils.js";
+import Utils from "./core/utils.js";
 
 class Loading {
 
-    constructor() {
+    constructor() {s
 
         this.id = "loading";
 
