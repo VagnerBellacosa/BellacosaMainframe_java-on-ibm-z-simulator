@@ -4,11 +4,11 @@
  credits.js
 =========================================================*/
 
-import Router from "./router.js";
-import EventBus from "./event-bus.js";
-import Analytics from "./analytics.js";
+import Router from "./core/router.js";
+import EventBus from "./core/event-bus.js";
+import Analytics from "./core/analytics.js";
 import Audio from "./audio.js";
-import Utils from "./utils.js";
+import Utils from "./core/utils.js";
 
 class Credits {
 

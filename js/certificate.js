@@ -4,16 +4,16 @@
  certificate.js
 =========================================================*/
 
-import Router from "./router.js";
-import EventBus from "./event-bus.js";
+import Router from "./core/router.js";
+import EventBus from "./core/event-bus.js";
 import XPManager from "./xp-manager.js";
 import Achievements from "./achievements.js";
-import Analytics from "./analytics.js";
-import Storage from "./storage.js";
+import Analytics from "./core/analytics.js";
+import Storage from "./core/storage.js";
 import Audio from "./audio.js";
 import Confetti from "./confetti.js";
-import Utils from "./utils.js";
-import CONFIG from "./config.js";
+import Utils from "./core/utils.js";
+import CONFIG from "./core/config.js";
 
 class Certificate {
 
