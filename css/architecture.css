@@ -1,0 +1,674 @@
+/*=========================================================
+ Bellacosa Mainframe
+ Java no IBM Z Simulator
+ architecture.css
+ Tela de Arquitetura IBM Z
+=========================================================*/
+
+/*=========================================================
+ CONTAINER
+=========================================================*/
+
+.architecture{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+    padding:30px;
+
+    animation:fadeArchitecture .6s ease;
+
+}
+
+/*=========================================================
+ HEADER
+=========================================================*/
+
+.architecture-header{
+
+    text-align:center;
+
+}
+
+.architecture-title{
+
+    font-size:2.2rem;
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.architecture-subtitle{
+
+    color:var(--text-secondary);
+
+    max-width:850px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+/*=========================================================
+ DIAGRAMA
+=========================================================*/
+
+.architecture-diagram{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    align-items:start;
+
+}
+
+/*=========================================================
+ CAMADAS
+=========================================================*/
+
+.arch-layer{
+
+    background:var(--surface);
+
+    border:2px solid var(--border);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.arch-layer:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary);
+
+    box-shadow:
+
+        0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.arch-layer::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:5px;
+
+    height:100%;
+
+    background:var(--primary);
+
+}
+
+/*=========================================================
+ ÍCONE
+=========================================================*/
+
+.arch-icon{
+
+    width:72px;
+
+    height:72px;
+
+    object-fit:contain;
+
+    display:block;
+
+    margin:auto;
+
+    margin-bottom:18px;
+
+}
+
+/*=========================================================
+ TÍTULO
+=========================================================*/
+
+.arch-name{
+
+    text-align:center;
+
+    color:var(--primary);
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+
+}
+
+/*=========================================================
+ DESCRIÇÃO
+=========================================================*/
+
+.arch-description{
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+    font-size:.95rem;
+
+    text-align:center;
+
+}
+
+/*=========================================================
+ SETAS
+=========================================================*/
+
+.arch-arrow{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:2rem;
+
+    color:var(--primary);
+
+    animation:arrowMove 1.5s infinite;
+
+}
+
+/*=========================================================
+ GRID
+=========================================================*/
+
+.arch-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+
+}
+
+/*=========================================================
+ CARDS
+=========================================================*/
+
+.arch-card{
+
+    background:var(--glass);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    padding:18px;
+
+    text-align:center;
+
+    transition:.30s;
+
+}
+
+.arch-card:hover{
+
+    border-color:var(--primary);
+
+    transform:scale(1.04);
+
+}
+
+.arch-card img{
+
+    width:64px;
+
+    margin-bottom:15px;
+
+}
+
+.arch-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.arch-card p{
+
+    color:var(--text-secondary);
+
+    font-size:.9rem;
+
+}
+
+/*=========================================================
+ STACK
+=========================================================*/
+
+.arch-stack{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.arch-stack-item{
+
+    background:linear-gradient(
+
+        90deg,
+
+        rgba(0,217,255,.12),
+
+        rgba(0,140,255,.12)
+
+    );
+
+    border-left:5px solid var(--primary);
+
+    padding:15px;
+
+    border-radius:10px;
+
+    transition:.30s;
+
+}
+
+.arch-stack-item:hover{
+
+    transform:translateX(8px);
+
+}
+
+/*=========================================================
+ LEGENDA
+=========================================================*/
+
+.arch-legend{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    justify-content:center;
+
+}
+
+.arch-badge{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    font-size:.85rem;
+
+}
+
+/*=========================================================
+ INFO
+=========================================================*/
+
+.arch-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+.arch-info-box{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:15px;
+
+    padding:20px;
+
+}
+
+.arch-info-box h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.arch-info-box ul{
+
+    padding-left:20px;
+
+    line-height:1.9;
+
+}
+
+.arch-info-box li{
+
+    color:var(--text-secondary);
+
+}
+
+/*=========================================================
+ FLUXO
+=========================================================*/
+
+.arch-flow{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.arch-flow-item{
+
+    background:var(--surface);
+
+    border:2px solid var(--primary);
+
+    border-radius:12px;
+
+    padding:18px;
+
+    min-width:140px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+}
+
+.arch-flow-arrow{
+
+    color:var(--primary);
+
+    font-size:2rem;
+
+}
+
+/*=========================================================
+ TOOLTIP
+=========================================================*/
+
+.arch-layer[data-description]{
+
+    cursor:pointer;
+
+}
+
+.arch-layer[data-description]:hover::after{
+
+    content:attr(data-description);
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    bottom:-10px;
+
+    translate:0 100%;
+
+    width:260px;
+
+    background:#111;
+
+    color:#fff;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    font-size:.85rem;
+
+    z-index:100;
+
+}
+
+/*=========================================================
+ HIGHLIGHT
+=========================================================*/
+
+.arch-active{
+
+    border-color:var(--success)!important;
+
+    box-shadow:
+
+        0 0 25px rgba(46,204,113,.45);
+
+}
+
+/*=========================================================
+ SVG
+=========================================================*/
+
+.arch-svg{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.arch-svg path{
+
+    stroke:var(--primary);
+
+    stroke-width:3;
+
+    fill:none;
+
+}
+
+.arch-svg circle{
+
+    fill:var(--primary);
+
+}
+
+/*=========================================================
+ ANIMAÇÕES
+=========================================================*/
+
+@keyframes arrowMove{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(6px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeArchitecture{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+/*=========================================================
+ RESPONSIVO
+=========================================================*/
+
+@media(max-width:900px){
+
+    .architecture{
+
+        padding:15px;
+
+    }
+
+    .architecture-title{
+
+        font-size:1.7rem;
+
+    }
+
+    .architecture-diagram{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .arch-flow{
+
+        flex-direction:column;
+
+    }
+
+    .arch-flow-arrow{
+
+        transform:rotate(90deg);
+
+    }
+
+}
+
+/*=========================================================
+ DARK TERMINAL EFFECT
+=========================================================*/
+
+.arch-mainframe{
+
+    background:
+
+        radial-gradient(
+
+            circle at top,
+
+            rgba(0,217,255,.08),
+
+            transparent 70%
+
+        ),
+
+        var(--surface);
+
+}
+
+/*=========================================================
+ LAYER COLORS
+=========================================================*/
+
+.arch-java{
+
+    border-left:6px solid #F89820;
+
+}
+
+.arch-jvm{
+
+    border-left:6px solid #FF6B35;
+
+}
+
+.arch-zos{
+
+    border-left:6px solid #33B1FF;
+
+}
+
+.arch-cics{
+
+    border-left:6px solid #00D9FF;
+
+}
+
+.arch-db2{
+
+    border-left:6px solid #8A63D2;
+
+}
+
+.arch-mq{
+
+    border-left:6px solid #42BE65;
+
+}
+
+.arch-api{
+
+    border-left:6px solid #FFB000;
+
+}
+
+.arch-cobol{
+
+    border-left:6px solid #2ECC71;
+
+}
