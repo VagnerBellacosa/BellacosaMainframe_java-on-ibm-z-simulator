@@ -1,37 +1,28 @@
 /**
  * ============================================================
  * Bellacosa Mainframe Java on IBM Z Simulator
- * Analytics
- * ============================================================
- *
- * Responsabilidades
- *
- * • Registrar eventos
- * • Registrar erros
- * • Registrar navegação
- * • Registrar laboratórios
- * • Registrar quizzes
- * • Registrar certificados
- *
+ * Core Analytics
  * ============================================================
  */
 
 import Logger from "./logger.js";
+import EventBus from "./event-bus.js";
 
 class Analytics {
 
     constructor() {
 
         this.enabled = true;
-
-        this.debug = true;
+        this.debug = false;
 
     }
 
+    /**
+     * Inicialização
+     */
     init(options = {}) {
 
         this.enabled = options.enabled ?? true;
-
         this.debug = options.debug ?? false;
 
         Logger.info("Analytics inicializado.");
@@ -51,22 +42,16 @@ class Analytics {
     }
 
     /**
-     * Evento genérico
+     * Método principal
      */
-    track(eventName, data = {}) {
+    track(name, data = {}) {
 
-        if (!this.enabled) {
-
-            return;
-
-        }
+        if (!this.enabled) return;
 
         const payload = {
 
+            event: name,
             timestamp: new Date().toISOString(),
-
-            event: eventName,
-
             ...data
 
         };
@@ -77,53 +62,55 @@ class Analytics {
 
         }
 
-        Logger.info(`[Analytics] ${eventName}`, payload);
+        Logger.info(`[Analytics] ${name}`, payload);
+
+        EventBus.emit("analytics:event", payload);
 
     }
 
     /**
-     * Mudança de tela
+     * Compatibilidade com código legado
      */
-    screen(screenName) {
+    event(name, value = null) {
+
+        if (value !== null && typeof value !== "object") {
+
+            this.track(name, { value });
+
+            return;
+
+        }
+
+        this.track(name, value ?? {});
+
+    }
+
+    /**
+     * Screen View
+     */
+    screen(name) {
 
         this.track("screen_view", {
 
-            screen: screenName
+            screen: name
 
         });
 
     }
 
     /**
-     * Laboratório iniciado
+     * Navegação
      */
-    startLab(id) {
+    page(name) {
 
-        this.track("lab_started", {
-
-            lab: id
-
-        });
+        this.screen(name);
 
     }
 
     /**
-     * Laboratório concluído
+     * Quiz
      */
-    finishLab(id) {
-
-        this.track("lab_completed", {
-
-            lab: id
-
-        });
-
-    }
-
-    /**
-     * Quiz iniciado
-     */
-    startQuiz(id) {
+    quizStarted(id) {
 
         this.track("quiz_started", {
 
@@ -133,15 +120,11 @@ class Analytics {
 
     }
 
-    /**
-     * Quiz concluído
-     */
-    finishQuiz(id, score) {
+    quizFinished(id, score) {
 
-        this.track("quiz_completed", {
+        this.track("quiz_finished", {
 
             quiz: id,
-
             score
 
         });
@@ -149,7 +132,30 @@ class Analytics {
     }
 
     /**
-     * XP ganho
+     * Laboratórios
+     */
+    labStarted(id) {
+
+        this.track("lab_started", {
+
+            lab: id
+
+        });
+
+    }
+
+    labFinished(id) {
+
+        this.track("lab_finished", {
+
+            lab: id
+
+        });
+
+    }
+
+    /**
+     * XP
      */
     gainXP(amount) {
 
@@ -166,22 +172,22 @@ class Analytics {
      */
     achievement(id) {
 
-        this.track("achievement_unlocked", {
+        this.track("achievement", {
 
-            achievement: id
+            id
 
         });
 
     }
 
     /**
-     * Certificado
+     * Certificados
      */
     certificate(id) {
 
-        this.track("certificate_earned", {
+        this.track("certificate", {
 
-            certificate: id
+            id
 
         });
 
@@ -195,9 +201,7 @@ class Analytics {
         this.track("error", {
 
             context,
-
-            message: error?.message ?? error,
-
+            message: error?.message ?? String(error),
             stack: error?.stack ?? null
 
         });
