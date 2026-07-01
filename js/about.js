@@ -4,12 +4,12 @@
  about.js
 =========================================================*/
 
-import Router from "./router.js";
-import EventBus from "./event-bus.js";
-import Analytics from "./analytics.js";
+import Router from "../js/core/router.js";
+import EventBus from "../js/core/event-bus.js";
+import Analytics from "../js/core/analytics.js";
 import Audio from "./audio.js";
-import Utils from "./utils.js";
-import CONFIG from "./config.js";
+import Utils from "../js/core/utils.js";
+import CONFIG from "../js/core/config.js";
 
 class About {
 

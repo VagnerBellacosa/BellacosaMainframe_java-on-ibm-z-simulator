@@ -4,11 +4,11 @@
  glossary.js
 =========================================================*/
 
-import EventBus from "./event-bus.js";
-import Analytics from "./analytics.js";
-import Storage from "./storage.js";
+import EventBus from "../js/core/event-bus.js";
+import Analytics from "../js/core/analytics.js";
+import Storage from "../js/core/storage.js";
 import Utils from "./utils.js";
-import CONFIG from "./config.js";
+import CONFIG from "../js/core/config.js";
 
 class Glossary {
 

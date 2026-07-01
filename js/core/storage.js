@@ -6,6 +6,7 @@
 
 import { CONFIG, DEFAULT_STATE } from "../js/core/config.js";
 import EventBus from "../js/core/event-bus.js";
+import Content from "../js/core/content.js";
 
 class StorageManager {
 
