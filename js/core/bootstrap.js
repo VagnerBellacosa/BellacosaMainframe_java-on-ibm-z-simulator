@@ -42,7 +42,7 @@ import analytics from "./analytics.js";
 
 import i18n from "../lang/i18n.js";
 
-import loading from "./loading.js";
+import loading from "../loading.js";
 
 import settings from "./settings.js";
 
@@ -232,7 +232,7 @@ class Bootstrap {
 
                         .serviceWorker
 
-                        .register("./service-worker.js");
+                        .register("./js/service-worker.js");
 
                     logger.success(
 
