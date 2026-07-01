@@ -5,13 +5,13 @@
  * ============================================================
  */
 
-import Logger from "../js/core/logger.js";
-import EventBus from "../js/core/event-bus.js";
+import Logger from "./logger.js";
+import EventBus from "./event-bus.js";
 
 class Analytics {
 
     constructor() {
-
+01/07/2026
         this.enabled = true;
         this.debug = false;
 
