@@ -22,9 +22,9 @@
  * ============================================================
  */
 
-import EventBus from "./event-bus.js";
-import Logger from "./logger.js";
-import AppState from "./app-state.js";
+import EventBus from "../js/core/event-bus.js";
+import Logger from "../js/core/logger.js";
+import AppState from "../js/core/app-state.js";
 
 class ScreenManager {
 
