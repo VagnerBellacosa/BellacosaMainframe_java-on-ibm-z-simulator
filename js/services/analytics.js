@@ -4,8 +4,8 @@
  analytics.js
 =========================================================*/
 
-import EventBus from "./event-bus.js";
-import { CONFIG } from "./config.js";
+import EventBus from "../js/core/event-bus.js";
+import { CONFIG } from "../js/core/config.js";
 
 class AnalyticsManager {
 
