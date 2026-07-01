@@ -11,7 +11,6 @@ import EventBus from "./event-bus.js";
 class Analytics {
 
     constructor() {
-01/07/2026
         this.enabled = true;
         this.debug = false;
 
