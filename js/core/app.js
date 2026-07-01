@@ -4,7 +4,7 @@
  app.js
 =========================================================*/
 
-import CONFIG from "../js/core/config.js";
+import CONFIG from "..js/core/config.js";
 import Router from "../js/core/router.js";
 import EventBus from "../js/core/event-bus.js";
 import Storage from "../js/core/storage.js";

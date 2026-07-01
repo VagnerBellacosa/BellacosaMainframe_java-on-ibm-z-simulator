@@ -4,6 +4,8 @@
  storage.js
 =========================================================*/
 
+/* teste */
+
 import { CONFIG, DEFAULT_STATE } from "./config.js";
 import EventBus from "./event-bus.js";
 import Content from "./content.js";

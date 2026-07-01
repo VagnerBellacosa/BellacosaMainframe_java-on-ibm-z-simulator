@@ -30,7 +30,7 @@ const PUBLISHER = {
 
         "@type":"ImageObject",
 
-        url:`${BASE_URL}/images/java.png`
+        url:`${BASE_URL}/Assets/image/java.png`
 
     }
 

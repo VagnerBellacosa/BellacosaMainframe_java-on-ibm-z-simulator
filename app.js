@@ -20,7 +20,7 @@
 
                 .register(
 
-                    "./service-worker.js"
+                    "../js/service-worker.js"
 
                 );
 

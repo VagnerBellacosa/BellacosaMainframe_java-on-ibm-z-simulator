@@ -4,8 +4,8 @@
  terminal.js
 =========================================================*/
 
-import { CONFIG, TERMINAL_MESSAGES } from "./config.js";
-import EventBus from "./event-bus.js";
+import { CONFIG, TERMINAL_MESSAGES } from "../js/core/config.js";
+import EventBus from "../js/core/event-bus.js";
 
 class Terminal {
 

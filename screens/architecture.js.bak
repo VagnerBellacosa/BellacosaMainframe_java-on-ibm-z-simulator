@@ -4,11 +4,11 @@
  screens/architecture.js
 =========================================================*/
 
-import Router from "../core/router.js";
-import EventBus from "../core/event-bus.js";
+import Router from "../router.js";
+import EventBus from "../event-bus.js";
 import XPManager from "../xp-manager.js";
-import Analytics from "../core/analytics.js";
-import Storage from "../core/storage.js";
+import Analytics from "../analytics.js";
+import Storage from "../storage.js";
 import Audio from "../audio.js";
 import Utils from "../utils.js";
 

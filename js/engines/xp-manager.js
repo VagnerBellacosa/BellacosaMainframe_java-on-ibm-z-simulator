@@ -4,8 +4,8 @@
  xp-manager.js
 =========================================================*/
 
-import { CONFIG, DEFAULT_STATE } from "./config.js";
-import EventBus from "./event-bus.js";
+import { CONFIG, DEFAULT_STATE } from "../js/core/config.js";
+import EventBus from "../js/core/event-bus.js";
 
 class XPManager {
 

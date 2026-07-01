@@ -4,8 +4,8 @@
  achievements.js
 =========================================================*/
 
-import { ACHIEVEMENTS } from "./config.js";
-import EventBus from "./event-bus.js";
+import { ACHIEVEMENTS } from "../js/core/config.js";
+import EventBus from "../js/core/event-bus.js";
 
 class AchievementsManager {
 

@@ -17,7 +17,7 @@
  * ============================================================
  */
 
-import EventBus from "../js/core/event-bus.js";
+import EventBus from "./event-bus.js";
 
 const DEFAULT_STATE = Object.freeze({
 

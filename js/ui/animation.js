@@ -4,7 +4,7 @@
  animation.js
 =========================================================*/
 
-import EventBus from "./event-bus.js";
+import EventBus from "../js/core/event-bus.js";
 
 class AnimationManager {
 

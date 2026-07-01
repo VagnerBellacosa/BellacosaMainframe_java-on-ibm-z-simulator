@@ -5,9 +5,9 @@
  Parte 1 - Estrutura e Renderização
 =========================================================*/
 
-import { CONFIG } from "./config.js";
-import EventBus from "./event-bus.js";
-import router from "./router.js";
+import { CONFIG } from "../js/core/config.js";
+import EventBus from "../js/core/event-bus.js";
+import router from "../js/core/router.js";
 
 class QuizEngine {
 
