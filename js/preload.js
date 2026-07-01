@@ -4,6 +4,8 @@
  preload.js
 =========================================================*/
 
+/* teste */
+
 import CONFIG from "./core/config.js";
 import Loading from "./loading.js";
 import EventBus from "./core/event-bus.js";
