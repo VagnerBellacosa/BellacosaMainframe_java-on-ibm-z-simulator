@@ -5,9 +5,9 @@
  Internacionalização (i18n)
 =========================================================*/
 
-import Storage from "./storage.js";
-import EventBus from "./event-bus.js";
-import Analytics from "./analytics.js";
+import Storage from "../js/storage.js";
+import EventBus from "../js/event-bus.js";
+import Analytics from "../js/analytics.js";
 
 class I18n {
 
