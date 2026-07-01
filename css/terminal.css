@@ -1,0 +1,700 @@
+/*=========================================================
+ Bellacosa Mainframe
+ Java no IBM Z Simulator
+ terminal.css
+ Terminal IBM Z / 3270
+=========================================================*/
+
+/*=========================================================
+ TERMINAL SCREEN
+=========================================================*/
+
+.terminal-screen{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:30px;
+
+    animation:terminalFade .5s ease;
+
+}
+
+/*=========================================================
+ HEADER
+=========================================================*/
+
+.terminal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.terminal-title{
+
+    font-size:2.2rem;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.terminal-subtitle{
+
+    color:var(--text-secondary);
+
+    margin-top:6px;
+
+}
+
+/*=========================================================
+ WINDOW
+=========================================================*/
+
+.terminal-window{
+
+    background:#050A10;
+
+    border:2px solid #1F4F72;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+        0 20px 45px rgba(0,0,0,.45);
+
+}
+
+/*=========================================================
+ TITLE BAR
+=========================================================*/
+
+.terminal-titlebar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 20px;
+
+    background:#10263C;
+
+    border-bottom:1px solid #1F4F72;
+
+}
+
+.terminal-titlebar-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.terminal-led{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+}
+
+.terminal-led.red{
+
+    background:#ff5f56;
+
+}
+
+.terminal-led.yellow{
+
+    background:#ffbd2f;
+
+}
+
+.terminal-led.green{
+
+    background:#27c93f;
+
+}
+
+.terminal-session{
+
+    color:#FFF;
+
+    font-weight:600;
+
+}
+
+/*=========================================================
+ BODY
+=========================================================*/
+
+.terminal-body{
+
+    padding:25px;
+
+    min-height:480px;
+
+    background:
+
+        linear-gradient(
+
+            rgba(0,255,120,.02),
+
+            rgba(0,255,120,.01)
+
+        ),
+
+        #02070D;
+
+    color:#00FF66;
+
+    font-family:
+
+        Consolas,
+
+        "Courier New",
+
+        monospace;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    overflow:auto;
+
+    white-space:pre-wrap;
+
+}
+
+/*=========================================================
+ CURSOR
+=========================================================*/
+
+.cursor{
+
+    display:inline-block;
+
+    width:10px;
+
+    height:20px;
+
+    background:#00FF66;
+
+    animation:blink .9s infinite;
+
+    vertical-align:middle;
+
+}
+
+/*=========================================================
+ COMMAND
+=========================================================*/
+
+.command{
+
+    color:#8CFF8C;
+
+    font-weight:bold;
+
+}
+
+.prompt{
+
+    color:#00D9FF;
+
+}
+
+.output{
+
+    color:#C9FFD7;
+
+}
+
+.error{
+
+    color:#FF7070;
+
+}
+
+.warning{
+
+    color:#FFD54F;
+
+}
+
+.success{
+
+    color:#00FF66;
+
+}
+
+/*=========================================================
+ INPUT
+=========================================================*/
+
+.terminal-input{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:15px;
+
+}
+
+.terminal-input span{
+
+    color:#00D9FF;
+
+}
+
+.terminal-input input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:#00FF66;
+
+    font-family:inherit;
+
+    font-size:1rem;
+
+}
+
+/*=========================================================
+ STATUS BAR
+=========================================================*/
+
+.terminal-status{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    padding:12px 20px;
+
+    background:#08131F;
+
+    border-top:1px solid #1F4F72;
+
+    color:#7DB7D8;
+
+    font-size:.9rem;
+
+}
+
+/*=========================================================
+ QUICK COMMANDS
+=========================================================*/
+
+.terminal-shortcuts{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.shortcut{
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    background:#10263C;
+
+    border:1px solid #1F4F72;
+
+    color:#00D9FF;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.shortcut:hover{
+
+    background:#00D9FF;
+
+    color:#08131F;
+
+}
+
+/*=========================================================
+ HISTORY
+=========================================================*/
+
+.command-history{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.history-item{
+
+    padding:10px 14px;
+
+    border-left:3px solid var(--primary);
+
+    background:rgba(255,255,255,.03);
+
+    border-radius:6px;
+
+}
+
+/*=========================================================
+ COMMAND TABLE
+=========================================================*/
+
+.command-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.command-table th{
+
+    background:#10263C;
+
+    color:#00D9FF;
+
+    padding:12px;
+
+    text-align:left;
+
+}
+
+.command-table td{
+
+    padding:12px;
+
+    border-top:1px solid #173753;
+
+    color:#C9FFD7;
+
+}
+
+.command-table tr:hover{
+
+    background:rgba(0,217,255,.05);
+
+}
+
+/*=========================================================
+ FILE LIST
+=========================================================*/
+
+.dataset-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.dataset{
+
+    background:#08131F;
+
+    border:1px solid #1F4F72;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    transition:.25s;
+
+}
+
+.dataset:hover{
+
+    border-color:#00D9FF;
+
+    transform:translateY(-4px);
+
+}
+
+.dataset-name{
+
+    color:#00D9FF;
+
+    font-weight:bold;
+
+}
+
+.dataset-type{
+
+    color:#B0D4E8;
+
+    font-size:.85rem;
+
+    margin-top:8px;
+
+}
+
+/*=========================================================
+ CONSOLE OUTPUT
+=========================================================*/
+
+.console{
+
+    background:#000;
+
+    border-radius:10px;
+
+    padding:18px;
+
+    color:#00FF66;
+
+    font-family:Consolas,monospace;
+
+    overflow:auto;
+
+}
+
+/*=========================================================
+ TERMINAL BUTTONS
+=========================================================*/
+
+.terminal-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+/*=========================================================
+ IBM 3270 EFFECT
+=========================================================*/
+
+.crt{
+
+    position:relative;
+
+}
+
+.crt::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        repeating-linear-gradient(
+
+            transparent 0,
+
+            transparent 2px,
+
+            rgba(255,255,255,.02) 3px
+
+        );
+
+    pointer-events:none;
+
+}
+
+.crt::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        radial-gradient(
+
+            ellipse at center,
+
+            transparent 55%,
+
+            rgba(0,0,0,.35)
+
+        );
+
+    pointer-events:none;
+
+}
+
+/*=========================================================
+ SCROLLBAR
+=========================================================*/
+
+.terminal-body::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+.terminal-body::-webkit-scrollbar-thumb{
+
+    background:#00D9FF;
+
+    border-radius:20px;
+
+}
+
+.terminal-body::-webkit-scrollbar-track{
+
+    background:#08131F;
+
+}
+
+/*=========================================================
+ ANIMATIONS
+=========================================================*/
+
+@keyframes blink{
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes terminalFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+/*=========================================================
+ RESPONSIVE
+=========================================================*/
+
+@media(max-width:900px){
+
+    .terminal-body{
+
+        min-height:360px;
+
+        font-size:14px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .terminal-screen{
+
+        padding:15px;
+
+    }
+
+    .terminal-title{
+
+        font-size:1.7rem;
+
+    }
+
+    .terminal-titlebar{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:10px;
+
+    }
+
+    .terminal-status{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .terminal-actions{
+
+        flex-direction:column;
+
+    }
+
+    .terminal-actions button{
+
+        width:100%;
+
+    }
+
+}
